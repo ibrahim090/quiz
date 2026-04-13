@@ -434,8 +434,7 @@
             </div>
 
             <div class="actions-container">
-                <button id="checkResultsBtn" class="btn btn-primary">أظهر النتيجة</button>
-                <button id="nextBatchBtn" class="btn btn-secondary" style="display: none;">المجموعة التالية</button>
+                <button id="nextBatchBtn" class="btn btn-primary">المجموعة التالية</button>
             </div>
         </main>
         <!-- End of Quiz Result Screen -->
@@ -1488,7 +1487,6 @@
         const DOM = {
             progressInfo: document.getElementById('progressInfo'),
             questionsContainer: document.getElementById('questionsContainer'),
-            checkResultsBtn: document.getElementById('checkResultsBtn'),
             nextBatchBtn: document.getElementById('nextBatchBtn'),
             quizMain: document.getElementById('quizMain'),
             resultScreen: document.getElementById('resultScreen'),
@@ -1560,72 +1558,46 @@
             });
 
             // Manage Action Buttons State
-            DOM.checkResultsBtn.style.display = 'block';
-            DOM.nextBatchBtn.style.display = 'none';
-
-            // Smooth Scroll to Top
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-        // Handle Option Selection
-        window.selectOption = function (globalIdx, optIdx) {
-            // Prevent selection if results are already showing (Next Button is visible)
-            if (DOM.checkResultsBtn.style.display === 'none') return;
-
-            userAnswers[globalIdx] = optIdx;
-
-            // Update UI: Remove 'selected' class from all sibling options
-            const container = document.getElementById(`options-${globalIdx}`);
-            const allOptions = container.querySelectorAll('.option');
-            allOptions.forEach(opt => opt.classList.remove('selected'));
-
-            // Add 'selected' class to the clicked option
-            document.getElementById(`opt-${globalIdx}-${optIdx}`).classList.add('selected');
-        };
-        // Handle Check Results Action
-        DOM.checkResultsBtn.addEventListener('click', () => {
-            const startIdx = currentBatchIndex * BATCH_SIZE;
-            const endIdx = Math.min(startIdx + BATCH_SIZE, questions.length);
-
-            // Loop through questions in current batch to evaluate answers
-            for (let i = startIdx; i < endIdx; i++) {
-                const q = questions[i];
-                const selectedIdx = userAnswers[i];
-                const correctIdx = q.answer;
-
-                const container = document.getElementById(`options-${i}`);
-                if (!container) continue;
-
-                // Visually lock the container to indicate it's graded
-                container.classList.add('locked');
-
-                if (selectedIdx !== undefined) {
-                    if (selectedIdx === correctIdx) {
-                        // User got it right
-                        document.getElementById(`opt-${i}-${selectedIdx}`).classList.add('correct-answer');
-                        totalScore++;
-                    } else {
-                        // User got it wrong
-                        document.getElementById(`opt-${i}-${selectedIdx}`).classList.add('wrong-answer');
-                        // Automatically show the correct answer
-                        document.getElementById(`opt-${i}-${correctIdx}`).classList.add('correct-answer');
-                    }
-                } else {
-                    // User didn't answer this question, just show the correct answer
-                    document.getElementById(`opt-${i}-${correctIdx}`).classList.add('correct-answer');
-                }
-            }
-
-            // Swap Buttons
-            DOM.checkResultsBtn.style.display = 'none';
-
+            DOM.nextBatchBtn.style.display = 'block';
             if (currentBatchIndex + 1 < getTotalBatches()) {
                 DOM.nextBatchBtn.textContent = "المجموعة التالية";
             } else {
                 DOM.nextBatchBtn.textContent = "إنهاء الاختبار"; // Finish Quiz
             }
 
-            DOM.nextBatchBtn.style.display = 'block';
-        });
+            // Smooth Scroll to Top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        // Handle Option Selection
+        window.selectOption = function (globalIdx, optIdx) {
+            const container = document.getElementById(`options-${globalIdx}`);
+            if (!container || container.classList.contains('locked')) return;
+
+            userAnswers[globalIdx] = optIdx;
+
+            // Update UI: Remove 'selected' class from all sibling options
+            const allOptions = container.querySelectorAll('.option');
+            allOptions.forEach(opt => opt.classList.remove('selected'));
+
+            // Add 'selected' class to the clicked option
+            document.getElementById(`opt-${globalIdx}-${optIdx}`).classList.add('selected');
+
+            // Instantly check result
+            container.classList.add('locked'); // Lock answers for this question
+            const q = questions[globalIdx];
+            const correctIdx = q.answer;
+
+            if (optIdx === correctIdx) {
+                // User got it right
+                document.getElementById(`opt-${globalIdx}-${optIdx}`).classList.add('correct-answer');
+                totalScore++;
+            } else {
+                // User got it wrong
+                document.getElementById(`opt-${globalIdx}-${optIdx}`).classList.add('wrong-answer');
+                // Automatically show the correct answer
+                document.getElementById(`opt-${globalIdx}-${correctIdx}`).classList.add('correct-answer');
+            }
+        };
         // Handle Next Batch / End Quiz Action
         DOM.nextBatchBtn.addEventListener('click', () => {
             currentBatchIndex++;
