@@ -1,0 +1,1323 @@
+
+
+          /**
+           * =========================================
+           * Application Data
+           * =========================================
+           */
+  
+          // Placeholder Data: You can replace this array with the full 205 questions array.
+          const questions = [
+  
+              // --- الأسئلة من ملف 1 (أساسيات الشبكات) ---
+              {
+                  question: "1. Computer network is best defined as a system that:",
+                  options: ["A) Stores digital information centrally", "B) Connects multiple computers to exchange 
+data and share resources", "C) Operates independently without communication", "D) Performs distributed data processing 
+only"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "2. Which characteristic distinguishes a LAN from a WAN?",
+                  options: ["A) Data rate only", "B) Transmission protocol", "C) Geographic coverage area", "D) Number 
+of connected devices"],
+                  answer: 2 // C [cite: 1]
+              },
+              {
+                  question: "3. Which network component determines the optimal path for forwarding packets?",
+                  options: ["A) Hub", "B) Router", "C) Switch", "D) Repeater"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "4. Which device converts digital signals into modulated analog signals for transmission?",
+                  options: ["A) Router", "B) Hub", "C) Modem", "D) Bridge"],
+                  answer: 2 // C [cite: 1]
+              },
+              {
+                  question: "5. One major advantage of networking is:",
+                  options: ["A) Elimination of data redundancy", "B) Application and resource sharing", "C) Removal of 
+security risks", "D) Reduction of network complexity"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "6. Which hardware component enables a computer to connect to a network?",
+                  options: ["A) Router", "B) NIC", "C) Modem", "D) Hub"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "7. Centralized data management enables organizations to:",
+                  options: ["A) Store data independently on each computer", "B) Manage and control data from a central 
+system", "C) Eliminate network administration", "D) Remove the need for servers"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "8. Which of the following is considered a potential disadvantage of networking?",
+                  options: ["A) Application sharing", "B) Hardware cost reduction", "C) Security threats", "D) 
+Resource accessibility"],
+                  answer: 2 // C [cite: 1]
+              },
+              {
+                  question: "9. In a client-server architecture, network services are primarily provided by:",
+                  options: ["A) Clients", "B) Servers", "C) Switches", "D) Hubs"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "10. Clients in a client-server network typically:",
+                  options: ["A) Provide services", "B) Request services from servers", "C) Route packets", "D) Store 
+data centrally"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "11. In networking terminology, a workstation refers to:",
+                  options: ["A) A network server", "B) A computer connected to a network", "C) A device used only for 
+routing", "D) A network storage unit"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "12. A network that interconnects LANs across cities or countries is classified as:",
+                  options: ["A) MAN", "B) WAN", "C) LAN", "D) PAN"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "13. SONET standards were developed by:",
+                  options: ["A) IEEE", "B) ANSI", "C) ITU", "D) ISO"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "14. Bluetooth technology is designed mainly for:",
+                  options: ["A) Long-distance communication", "B) Short-range wireless communication", "C) Optical 
+fiber networks", "D) WAN infrastructure"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "15. A Pico net may contain up to:",
+                  options: ["A) 4 devices", "B) 6 devices", "C) 8 devices", "D) 16 devices"],
+                  answer: 2 // C [cite: 1]
+              },
+              {
+                  question: "16. The controlling node in a Pico net is known as the:",
+                  options: ["A) Master node", "B) Primary station", "C) Server node", "D) Access controller"],
+                  answer: 0 // A [cite: 1]
+              },
+              {
+                  question: "17. Other devices in the Pico net are called:",
+                  options: ["A) Clients", "B) Secondary stations", "C) Routers", "D) Hubs"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "18. Network topology refers to the:",
+                  options: ["A) Protocol used in communication", "B) Physical arrangement of network nodes", "C) Data 
+transmission rate", "D) Type of network security"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "19. Which topology uses a single shared communication cable?",
+                  options: ["A) Ring", "B) Bus", "C) Star", "D) Mesh"],
+                  answer: 1 // B [cite: 1]
+              },
+              {
+                  question: "20. Which topology connects each device to a central hub or switch?",
+                  options: ["A) Bus", "B) Ring", "C) Star", "D) Hybrid"],
+                  answer: 2 // C [cite: 1]
+              },
+              // --- الأسئلة من ملف 6 (المسار الرقمي) ---
+              {
+                  question: "Q21: In a ring topology, network access is typically controlled by:",
+                  options: ["A) Broadcast signals", "B) Token passing", "C) Packet flooding", "D) Central routing"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q22: Which topology simplifies the process of adding new devices?",
+                  options: ["A) Bus", "B) Star", "C) Ring", "D) Linear"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q23: Transmission mode describes:",
+                  options: ["A) Signal frequency", "B) Direction of signal flow between devices", "C) Type of network 
+topology", "D) Network bandwidth"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q24: In simplex transmission:",
+                  options: ["A) Both devices transmit simultaneously", "B) Communication occurs in one direction 
+only", "C) Data alternates between devices", "D) Multiple channels are used"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q25: Half-duplex communication allows:",
+                  options: ["A) Simultaneous transmission and reception", "B) One-way communication only", "C) 
+Bidirectional communication but not simultaneously", "D) Parallel communication channels"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q26: Full-duplex communication allows:",
+                  options: ["A) Two devices to transmit simultaneously", "B) Only sequential communication", "C) 
+Half-rate communication", "D) One-direction communication"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q27: Transmission media that use physical cables are classified as:",
+                  options: ["A) Unguided media", "B) Guided media", "C) Broadcast media", "D) Satellite media"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q28: Twisted pair cables reduce electromagnetic interference primarily by:",
+                  options: ["A) Increasing signal amplitude", "B) Twisting copper conductors together", "C) Using 
+optical transmission", "D) Increasing transmission voltage"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q29: Which cable type transmits data using light signals?",
+                  options: ["A) Coaxial", "B) Twisted pair", "C) Fiber optic", "D) UTP"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q30: Single-mode fiber typically uses:",
+                  options: ["A) LED sources", "B) Laser diodes", "C) Copper conductors", "D) Electrical pulses"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q31: Unguided transmission media send signals through:",
+                  options: ["A) Optical fibers", "B) Copper wires", "C) Free space or air", "D) Coaxial cables"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q32: The network core primarily consists of:",
+                  options: ["A) Hosts", "B) Routers", "C) Peripheral devices", "D) End systems"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q33: Circuit switching requires:",
+                  options: ["A) Packet segmentation", "B) Establishing a dedicated path before transmission", "C) 
+Dynamic routing only", "D) Broadcast communication"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q34: Packet switching divides messages into:",
+                  options: ["A) Frames only", "B) Packets", "C) Signals", "D) Segments only"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q35: In store-and-forward packet switching, a router must:",
+                  options: ["A) Forward packets immediately", "B) Receive the entire packet before forwarding", "C) 
+Ignore packet headers", "D) Convert packets to analog signals"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q36: Modulation is defined as:",
+                  options: ["A) Encoding binary data", "B) Altering a carrier signal to convey information", "C) 
+Amplifying digital signals", "D) Compressing network data"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q37: Amplitude Modulation changes:",
+                  options: ["A) Frequency", "B) Amplitude", "C) Phase", "D) Data rate"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q38: Frequency Modulation changes:",
+                  options: ["A) Signal amplitude", "B) Signal phase", "C) Carrier frequency", "D) Transmission 
+medium"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q39: Phase Modulation modifies:",
+                  options: ["A) Signal power", "B) Signal phase", "C) Signal bandwidth", "D) Signal duration"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q40: A modem primarily functions to:",
+                  options: ["A) Route packets", "B) Convert digital signals into modulated analog signals", "C) 
+Control network topology", "D) Manage switching tables"],
+                  answer: 1 // B
+              },
+  
+              // --- الأسئلة من ملف 3 (مراجعة 41-60) ---
+              {
+                  question: "41. RS-232 and RS-422 represent:",
+                  options: ["A) Routing protocols", "B) Physical layer standards", "C) Network topologies", "D) 
+Encryption methods"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "42. Hubs primarily operate at the:",
+                  options: ["A) Network layer", "B) Transport layer", "C) Physical layer", "D) Application layer"],
+                  answer: 2 // C [cite: 3]
+              },
+              {
+                  question: "43. Which device operates primarily at Layer 2 (Data Link layer)?",
+                  options: ["A) Router", "B) Hub", "C) Repeater", "D) Switch"],
+                  answer: 3 // D [cite: 3]
+              },
+              {
+                  question: "44. Which device operates primarily at Layer 3 (Network layer)?",
+                  options: ["A) Switch", "B) Router", "C) Hub", "D) Repeater"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "45. Port addresses are used to identify specific processes at which layer?",
+                  options: ["A) Network layer", "B) Data Link layer", "C) Transport layer", "D) Application layer"],
+                  answer: 2 // C [cite: 3]
+              },
+              {
+                  question: "46. Which address is considered a physical address?",
+                  options: ["A) IP address", "B) Port address", "C) MAC address", "D) Logical address"],
+                  answer: 2 // C [cite: 3]
+              },
+              {
+                  question: "47. Which address is used to identify a device across multiple networks?",
+                  options: ["A) MAC address", "B) IP address", "C) Physical address", "D) Hardware address"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "48. The primary purpose of an IP address is:",
+                  options: ["A) Physical identification", "B) Logical addressing and routing", "C) Data encryption", 
+"D) Error recovery"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "49. Port numbers identify:",
+                  options: ["A) A specific application/process", "B) A network interface card", "C) A physical cable", 
+"D) A network topology"],
+                  answer: 0 // A [cite: 3]
+              },
+              {
+                  question: "50. What is the primary purpose of using layered models in networking?",
+                  options: ["A) Increasing hardware complexity", "B) Simplifying network design and implementation", 
+"C) Eliminating protocols", "D) Reducing transmission speed"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "51. Layered models facilitate interoperability between:",
+                  options: ["A) Identical hardware systems", "B) Different hardware and software platforms", "C) 
+Single-vendor networks", "D) Local devices only"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "52. Standardization across manufacturers is achieved through:",
+                  options: ["A) Network cables", "B) Layered architecture", "C) High voltages", "D) Faster CPUs"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "53. Breaking communication into layers primarily helps to:",
+                  options: ["A) Reduce bandwidth", "B) Simplify system design", "C) Increase costs", "D) Eliminate 
+security"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "54. The OSI model was developed by:",
+                  options: ["A) IEEE", "B) ISO", "C) IETF", "D) ANSI"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "55. A set of rules governing communication between devices is called:",
+                  options: ["A) Interface", "B) Protocol", "C) Packet", "D) Frame"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "56. Each layer in a network model provides services to:",
+                  options: ["A) The same layer", "B) The layer above it", "C) The physical medium", "D) The user 
+only"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "57. What is the Protocol Data Unit (PDU) at the Data Link layer?",
+                  options: ["A) Packet", "B) Frame", "C) Segment", "D) Bit"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "58. The process of adding headers as data moves down the layers is called:",
+                  options: ["A) Fragmentation", "B) Encapsulation", "C) Routing", "D) Multiplexing"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "59. A network model organizes communication tasks into:",
+                  options: ["A) Channels", "B) Layers", "C) Frames", "D) Packets"],
+                  answer: 1 // B [cite: 3]
+              },
+              {
+                  question: "60. In a layered architecture, each layer provides services to:",
+                  options: ["A) The same layer", "B) The layer above it", "C) The physical medium", "D) The router"],
+                  answer: 1 // B [cite: 3]
+              },
+  
+              // --- الأسئلة من ملف 4 (مراجعة 61-80) ---
+              {
+                  question: "61. Communication between corresponding (peer) layers in two systems is called:",
+                  options: ["A) Logical communication", "B) Direct communication", "C) Physical communication", "D) 
+Channel communication"],
+                  answer: 0 // A [cite: 4]
+              },
+              {
+                  question: "62. The process of adding headers to data as it moves down the layers is called:",
+                  options: ["A) Fragmentation", "B) Encapsulation", "C) Multiplexing", "D) Routing"],
+                  answer: 1 // B [cite: 4]
+              },
+              {
+                  question: "63. The process of removing headers as data moves up the layers is called:",
+                  options: ["A) Encapsulation", "B) De-capsulation", "C) Fragmentation", "D) Multiplexing"],
+                  answer: 1 // B [cite: 4]
+              },
+              {
+                  question: "64. Which OSI layer is responsible for data transmission over the physical medium?",
+                  options: ["A) Network", "B) Physical", "C) Transport", "D) Data link"],
+                  answer: 1 // B [cite: 4]
+              },
+              {
+                  question: "65. Which OSI layer handles node-to-node (hop-to-hop) delivery?",
+                  options: ["A) Network", "B) Data link", "C) Transport", "D) Physical"],
+                  answer: 1 // B [cite: 4]
+              },
+              {
+                  question: "66. Which OSI layer is responsible for logical addressing and routing?",
+                  options: ["A) Network layer", "B) Data link layer", "C) Transport layer", "D) Physical layer"],
+                  answer: 0 // A [cite: 4]
+              },
+              {
+                  question: "67. Which OSI layer ensures reliable process-to-process delivery?",
+                  options: ["A) Network layer", "B) Data link layer", "C) Transport layer", "D) Session layer"],
+                  answer: 2 // C [cite: 4]
+              },
+              {
+                  question: "68. Which OSI layer is responsible for dialog control and synchronization?",
+                  options: ["A) Session layer", "B) Network layer", "C) Transport layer", "D) Physical layer"],
+                  answer: 0 // A [cite: 4]
+              },
+              {
+                  question: "69. Which OSI layer deals with data translation, encryption, and compression?",
+                  options: ["A) Presentation layer", "B) Session layer", "C) Application layer", "D) Transport layer"],
+                  answer: 0 // A [cite: 4]
+              },
+              {
+                  question: "70. Which OSI layer provides services directly to the end user?",
+                  options: ["A) Application layer", "B) Transport layer", "C) Network layer", "D) Session layer"],
+                  answer: 0 // A [cite: 4]
+              },
+              {
+                  question: "71. Which layer performs framing?",
+                  options: ["A) Data link layer", "B) Network layer", "C) Physical layer", "D) Transport layer"],
+                  answer: 0 // A [cite: 4]
+              },
+              {
+                  question: "72. Which layer performs media access control?",
+                  options: ["A) Data link layer", "B) Network layer", "C) Physical layer", "D) Transport layer"],
+                  answer: 0 // A [cite: 4]
+              },
+              {
+                  question: "73. Which layer is responsible for determining the best path for data?",
+                  options: ["A) Network layer", "B) Data link layer", "C) Transport layer", "D) Session layer"],
+                  answer: 0 // A [cite: 4]
+              },
+              {
+                  question: "74. Flow control between end systems is handled by:",
+                  options: ["A) Network layer", "B) Transport layer", "C) Physical layer", "D) Data link layer"],
+                  answer: 1 // B [cite: 4]
+              },
+              {
+                  question: "75. Error detection at the frame level occurs in:",
+                  options: ["A) Transport layer", "B) Data link layer", "C) Network layer", "D) Physical layer"],
+                  answer: 1 // B [cite: 4]
+              },
+              {
+                  question: "76. Reliable data transfer is the primary responsibility of:",
+                  options: ["A) Network layer", "B) Transport layer", "C) Data link layer", "D) Session layer"],
+                  answer: 1 // B [cite: 4]
+              },
+              {
+                  question: "77. The data unit at the transport layer is called:",
+                  options: ["A) Frame", "B) Packet", "C) Segment", "D) Bit"],
+                  answer: 2 // C [cite: 4]
+              },
+              {
+                  question: "78. The data unit at the network layer is called:",
+                  options: ["A) Frame", "B) Packet", "C) Segment", "D) Bit"],
+                  answer: 1 // B [cite: 4]
+              },
+              {
+                  question: "79. The data unit at the data link layer is called:",
+                  options: ["A) Frame", "B) Segment", "C) Packet", "D) Bit"],
+                  answer: 0 // A [cite: 4]
+              },
+              {
+                  question: "80. The data unit at the physical layer is:",
+                  options: ["A) Packet", "B) Frame", "C) Bit", "D) Segment"],
+                  answer: 2 // C [cite: 4]
+              },
+  
+              // --- الأسئلة من ملف 5 (مراجعة 81-100) ---
+              {
+                  question: "81. Which layer is responsible for synchronization of communication?",
+                  options: ["A) Session layer", "B) Network layer", "C) Transport layer", "D) Physical layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "82. Encapsulation occurs when data moves:",
+                  options: ["A) Up the layers", "B) Down the layers", "C) Across the network", "D) Through routers"],
+                  answer: 1 // B [cite: 5]
+              },
+              {
+                  question: "83. De-capsulation occurs at the:",
+                  options: ["A) Receiving device", "B) Sending device", "C) Router", "D) Switch"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "84. Which OSI layer is responsible for encryption?",
+                  options: ["A) Presentation layer", "B) Application layer", "C) Session layer", "D) Transport layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "85. Which OSI layer interacts directly with software applications?",
+                  options: ["A) Application layer", "B) Transport layer", "C) Session layer", "D) Presentation layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "86. Process-to-process communication is the responsibility of:",
+                  options: ["A) Transport layer", "B) Network layer", "C) Data link layer", "D) Physical layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "87. Hop-to-hop delivery is the responsibility of:",
+                  options: ["A) Data link layer", "B) Network layer", "C) Transport layer", "D) Session layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "88. End-to-end delivery is the responsibility of:",
+                  options: ["A) Transport layer", "B) Data link layer", "C) Physical layer", "D) Network layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "89. Which layer ensures data compatibility between different systems?",
+                  options: ["A) Presentation layer", "B) Session layer", "C) Application layer", "D) Transport layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "90. Media access control occurs at which layer?",
+                  options: ["A) Data link layer", "B) Physical layer", "C) Network layer", "D) Transport layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "91. Data compression is a function of which layer?",
+                  options: ["A) Presentation layer", "B) Application layer", "C) Session layer", "D) Transport layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "92. Managing dialogue control is a function of:",
+                  options: ["A) Session layer", "B) Network layer", "C) Transport layer", "D) Physical layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "93. Converting bits into signals is a function of:",
+                  options: ["A) Physical layer", "B) Data link layer", "C) Network layer", "D) Transport layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "94. Determining the best path across multiple networks is done by:",
+                  options: ["A) Network layer", "B) Data link layer", "C) Transport layer", "D) Session layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "95. Which OSI layers are classified as the user support layers?",
+                  options: ["A) Layers 5, 6, and 7", "B) Layers 1, 2, and 3", "C) Layer 4", "D) All layers"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "96. Which layer provides services to the end user?",
+                  options: ["A) Application layer", "B) Presentation layer", "C) Session layer", "D) Transport layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "97. Which layer ensures that segments arrive in the correct order?",
+                  options: ["A) Transport layer", "B) Network layer", "C) Data link layer", "D) Physical layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "98. Which layer is responsible for defining data formats?",
+                  options: ["A) Presentation layer", "B) Application layer", "C) Session layer", "D) Network layer"],
+                  answer: 0 // A [cite: 5]
+              },
+              {
+                  question: "99. The lowest layer of the OSI model is the:",
+                  options: ["A) network layer", "B) transport layer", "C) physical layer", "D) application layer"],
+                  answer: 2 // C [cite: 5]
+              },
+              {
+                  question: "100. The data link layer provides:",
+                  options: ["A) hop-to-hop delivery", "B) process-to-process delivery", "C) end-to-end routing", "D) 
+application services"],
+                  answer: 0 // A [cite: 5]
+              },
+  
+              // --- الأسئلة من ملف 2 (مراجعة 101-120) ---
+              {
+                  question: "101. The network layer is concerned with _____ of data.",
+                  options: ["A) Bits", "B) frames", "C) packets", "D) bytes"],
+                  answer: 2 // C [cite: 2]
+              },
+              {
+                  question: "102. The transport layer provides:",
+                  options: ["A) host-to-host communication", "B) process-to-process communication", "C) node-to-node 
+communication", "D) cable communication"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "103. The session layer is responsible for:",
+                  options: ["A) signal encoding", "B) dialog control between devices", "C) packet routing", "D) frame 
+creation"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "104. The presentation layer deals with:",
+                  options: ["A) encryption and data representation", "B) signal transmission", "C) routing tables", 
+"D) packet switching"],
+                  answer: 0 // A [cite: 2]
+              },
+              {
+                  question: "105. The application layer provides:",
+                  options: ["A) device addressing", "B) end-user network services", "C) physical data links", "D) 
+error recovery at the bit level"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "106. Encapsulation refers to:",
+                  options: ["A) encrypting packets", "B) adding headers as data moves through layers", "C) compressing 
+packets", "D) switching packets"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "107. The seven layers of the OSI model are commonly divided into:",
+                  options: ["A) Two groups", "B) Three Subgroups", "C) Four groups", "D) Five groups"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "108. Which OSI layers are classified as the user support layers?",
+                  options: ["A) Application, Presentation, Session", "B) Network, Data Link, Physical", "C) Transport, 
+Network, Data Link", "D) Presentation, Transport, Network"],
+                  answer: 0 // A [cite: 2]
+              },
+              {
+                  question: "109. Which OSI layers are classified as the network support layers?",
+                  options: ["A) Application, Presentation, Session", "B) Transport, Network, Data Link", "C) Data 
+Link, Physical, Session", "D) Physical, Data Link, Network"],
+                  answer: 3 // D [cite: 2]
+              },
+              {
+                  question: "110. The TCP/IP protocol suite was originally developed to support communication in:",
+                  options: ["A) ISO networks", "B) ARPANET", "C) IEEE networks", "D) LAN systems"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "111. The TCP/IP protocol suite is a set of protocols designed for:",
+                  options: ["A) Controlling computer hardware", "B) Communication between networked computers", "C) 
+Managing operating systems", "D) Designing network cables"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "112. In the TCP/IP model, communication tasks are divided into layers in order to:",
+                  options: ["A) Increase packet size", "B) Simplify network design and implementation", "C) Reduce 
+routing complexity", "D) Eliminate addressing"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "113. The TCP/IP protocol suite uses a layered architecture where each layer:",
+                  options: ["A) Operates independently", "B) Uses services of the layer below and provides services to 
+the layer above", "C) Communicates directly with physical medium", "D) Performs identical functions"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "114. In network communication, protocols define:",
+                  options: ["A) Hardware components", "B) Rules governing communication between devices", "C) Network 
+cables", "D) Physical signals"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "115. The TCP/IP model consists of:",
+                  options: ["A) 3 layers", "B) 4 or 5 layers", "C) 6 layers", "D) 7 layers"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "116. The layers of the TCP/IP model are:",
+                  options: ["A) Application, Transport, Internet, Network Access", "B) App, Session, Transport, 
+Network", "C) Pres, Transport, Internet, Physical", "D) App, Data Link, Internet, Physical"],
+                  answer: 0 // A [cite: 2]
+              },
+              {
+                  question: "117. Which layer of the TCP/IP model is responsible for process-to-process 
+communication?",
+                  options: ["A) Application layer", "B) Transport layer", "C) Internet layer", "D) Network Access 
+layer"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "118. Which TCP/IP layer is responsible for logical addressing across networks?",
+                  options: ["A) Transport layer", "B) Internet layer", "C) Application layer", "D) Network Access 
+layer"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "119. Which TCP/IP layer is responsible for packet routing?",
+                  options: ["A) Transport layer", "B) Internet layer", "C) Application layer", "D) Network Access 
+layer"],
+                  answer: 1 // B [cite: 2]
+              },
+              {
+                  question: "120. The Network Access layer is responsible for:",
+                  options: ["A) Routing packets", "B) Providing application services", "C) Transmission of frames over 
+the physical medium", "D) Managing transport connections"],
+                  answer: 2 // C [cite: 2]
+              },
+  
+              // --- الأسئلة من ملف 7 (TCP/IP) ---
+              {
+                  question: "Q121: The Application layer of TCP/IP provides:",
+                  options: ["A) Device addressing", "B) Packet routing", "C) Services to user applications", "D) Frame 
+transmission"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q122: Which protocol is used for web communication?",
+                  options: ["A) FTP", "B) HTTP", "C) DNS", "D) SMTP"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q123: Which protocol is responsible for transferring files between computers?",
+                  options: ["A) SMTP", "B) FTP", "C) HTTP", "D) SNMP"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q124: The protocol used to translate domain names into IP addresses is:",
+                  options: ["A) ARP", "B) DNS", "C) ICMP", "D) UDP"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q125: Which protocol is primarily used for sending electronic mail?",
+                  options: ["A) HTTP", "B) FTP", "C) SMTP", "D) SNMP"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q126: The Transport layer provides communication between:",
+                  options: ["A) Devices", "B) Networks", "C) Processes", "D) Routers"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q127: Which protocol provides reliable data transfer?",
+                  options: ["A) UDP", "B) TCP", "C) IP", "D) ARP"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q128: UDP is characterized by:",
+                  options: ["A) Connection-oriented service", "B) Reliable delivery", "C) Connectionless service", "D) 
+Error-free transmission"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q129: Which of the following is a function of the Transport layer?",
+                  options: ["A) Routing packets", "B) Flow control", "C) Signal transmission", "D) Address mapping"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q130: Which transport protocol provides connectionless service with lower overhead than 
+TCP?",
+                  options: ["A) HTTP", "B) UDP", "C) IP", "D) ICMP"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q131: The Internet layer is responsible for:",
+                  options: ["A) Data encryption", "B) Logical addressing and routing", "C) Application services", "D) 
+Signal transmission"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q132: Which protocol is the fundamental protocol of the Internet layer?",
+                  options: ["A) TCP", "B) IP", "C) FTP", "D) HTTP"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q133: The Internet Protocol (IP) provides:",
+                  options: ["A) Guaranteed delivery", "B) Reliable connection", "C) Best-effort packet delivery", "D) 
+Error-free transmission"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q134: An IP address identifies:",
+                  options: ["A) A computer interface within a network", "B) A network cable", "C) A communication 
+protocol", "D) A software application"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q135: The Network Access layer corresponds to which OSI layers?",
+                  options: ["A) Physical only", "B) Data Link only", "C) Physical and Data Link layers", "D) Network 
+and Transport"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q136: Which technology belongs to the Network Access layer?",
+                  options: ["A) Ethernet", "B) TCP", "C) HTTP", "D) SMTP"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q137: Encapsulation is the process of:",
+                  options: ["A) Compressing network data", "B) Dividing networks into subnets", "C) Enclosing data 
+with protocol headers", "D) Encrypting data"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q138: The data unit at the Transport layer is called:",
+                  options: ["A) Frame", "B) Segment", "C) Packet", "D) Bit"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q139: The data unit at the Internet layer is called:",
+                  options: ["A) Frame", "B) Packet/Datagram", "C) Segment", "D) Message"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q140: The data unit at the Network Access layer is called:",
+                  options: ["A) Frame", "B) Packet", "C) Segment", "D) Message"],
+                  answer: 0 // A
+              },
+  
+              // --- الأسئلة من ملف 8 (Diagnostic) ---
+              {
+                  question: "Q141: The reverse process of encapsulation is called:",
+                  options: ["A) Fragmentation", "B) Decapsulation", "C) Multiplexing", "D) Transmission"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q142: The OSI model contains:",
+                  options: ["A) 4 layers", "B) 5 layers", "C) 6 layers", "D) 7 layers"],
+                  answer: 3 // D
+              },
+              {
+                  question: "Q143: The OSI model was developed by:",
+                  options: ["A) IEEE", "B) ISO", "C) IETF", "D) ARPANET"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q144: Which OSI layers correspond to the TCP/IP Application layer?",
+                  options: ["A) Application, Presentation, Session", "B) Transport and Network", "C) Physical and Data 
+Link", "D) Network and Session"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q145: Which OSI layer corresponds to the TCP/IP Internet layer?",
+                  options: ["A) Data Link", "B) Network", "C) Transport", "D) Session"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q146: Which OSI layer corresponds to the TCP/IP Transport layer?",
+                  options: ["A) Network", "B) Transport", "C) Session", "D) Application"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q147: Which model is widely used in the Internet today?",
+                  options: ["A) OSI model", "B) TCP/IP model", "C) IEEE model", "D) ISO model"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q148: The OSI model is considered mainly:",
+                  options: ["A) A practical implementation", "B) A theoretical reference model", "C) A routing 
+protocol", "D) A transport protocol"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q149: The main advantage of layered architecture is:",
+                  options: ["A) Hardware simplification", "B) Modularity in network design", "C) Increasing packet 
+size", "D) Eliminating protocols"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q150: Each TCP/IP layer communicates logically with:",
+                  options: ["A) Adjacent layers only", "B) Corresponding layer on another device", "C) Physical medium 
+directly", "D) Application programs only"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q151: TCP provides:",
+                  options: ["A) Connectionless communication", "B) Reliable connection-oriented communication", "C) 
+Broadcast communication", "D) Multicast communication"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q152: UDP provides:",
+                  options: ["A) Reliable communication", "B) Connection-oriented communication", "C) Connectionless 
+service", "D) Error correction"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q153: Which protocol is used for network error reporting?",
+                  options: ["A) ICMP", "B) SMTP", "C) FTP", "D) HTTP"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q154: Which protocol maps IP addresses to MAC addresses?",
+                  options: ["A) DNS", "B) ARP", "C) TCP", "D) UDP"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q155: Which protocol suite forms the foundation of the Internet?",
+                  options: ["A) OSI", "B) TCP/IP", "C) IEEE 802", "D) HTTP"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q156: Which protocol is used for remote login?",
+                  options: ["A) FTP", "B) TELNET", "C) DNS", "D) SMTP"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q157: Which protocol is used for network management?",
+                  options: ["A) SNMP", "B) HTTP", "C) FTP", "D) TCP"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q158: The TCP/IP protocol suite enables communication between:",
+                  options: ["A) Software applications only", "B) Network devices across interconnected networks", "C) 
+Hardware components only", "D) Local devices only"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q159: What does the TCP/IP protocol suite represent?",
+                  options: ["A) A proprietary networking model", "B) The de-facto standard for internet 
+communication", "C) An alternative exclusively for wireless networks", "D) A replacement for application protocols"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q160: What does the abbreviation IP stand for?",
+                  options: ["A) Internet Process", "B) Internet Protocol", "C) Internal Packet", "D) Information 
+Protocol"],
+                  answer: 1 // B
+              },
+  
+              // --- الأسئلة من ملف 9 (IPv4 Knowledge Check) ---
+              {
+                  question: "Q161: At which layer of the OSI model does IP addressing operate?",
+                  options: ["A) Data Link Layer", "B) Network Layer", "C) Transport Layer", "D) Application Layer"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q162: Which protocol is responsible for logical addressing in the Internet?",
+                  options: ["A) TCP", "B) HTTP", "C) IP", "D) FTP"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q163: Which addressing type uniquely identifies a device across multiple networks?",
+                  options: ["A) MAC Address", "B) Logical Address", "C) Port Number", "D) Physical Address"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q164: How many bits are used in an IPv4 address?",
+                  options: ["A) 16", "B) 32", "C) 64", "D) 128"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q165: An IPv4 address consists of how many octets?",
+                  options: ["A) 2", "B) 3", "C) 4", "D) 8"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q166: Each octet in an IPv4 address contains:",
+                  options: ["A) 4 bits", "B) 8 bits", "C) 16 bits", "D) 32 bits"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q167: What is the valid decimal range of an IPv4 octet?",
+                  options: ["A) 0-127", "B) 0-255", "C) 1-256", "D) 1-512"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q168: Which of the following represents a valid IPv4 address?",
+                  options: ["A) 192.168.1.10", "B) 256.10.1.1", "C) 192.168.300.1", "D) 192.168.1"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q169: An IPv4 address is logically divided into:",
+                  options: ["A) Source & destination", "B) Network ID & Host ID", "C) Header & payload", "D) Bits & 
+bytes"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q170: The Network ID portion of an IP address identifies:",
+                  options: ["A) The router", "B) The network", "C) The application", "D) The transport protocol"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q171: The Host ID portion of an IP address identifies:",
+                  options: ["A) The specific device in the network", "B) The router", "C) The network segment", "D) 
+The gateway"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q172: All hosts in the same network share the same:",
+                  options: ["A) Host ID", "B) Network ID", "C) MAC address", "D) Port number"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q173: Which device primarily uses IP addresses to forward packets between networks?",
+                  options: ["A) Switch", "B) Hub", "C) Router", "D) Repeater"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q174: Which class of IPv4 addresses is intended for very large networks?",
+                  options: ["A) Class A", "B) Class B", "C) Class C", "D) Class D"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q175: Which class of IPv4 addresses is commonly used for small networks?",
+                  options: ["A) Class A", "B) Class B", "C) Class C", "D) Class D"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q176: The first octet range of Class A addresses is:",
+                  options: ["A) 1-126", "B) 128-191", "C) 192-223", "D) 224-239"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q177: The first octet range of Class B addresses is:",
+                  options: ["A) 1-126", "B) 128-191", "C) 192-223", "D) 224-239"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q178: The first octet range of Class C addresses is:",
+                  options: ["A) 1-126", "B) 128-191", "C) 192-223", "D) 224-239"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q179: Which address represents a broadcast address?",
+                  options: ["A) 0.0.0.0", "B) 127.0.0.1", "C) 255.255.255.255", "D) 192.168.1.1"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q180: Which of the following is a private IPv4 address?",
+                  options: ["A) 8.8.8.8", "B) 192.168.1.10", "C) 54.20.1.1", "D) 12.5.4.1"],
+                  answer: 1 // B
+              },
+  
+              // --- الأسئلة من ملف 10 (IP Addressing Assessment) ---
+              {
+                  question: "Q181: Private IP addresses are mainly used in:",
+                  options: ["A) Public Internet routing", "B) Local area networks", "C) Satellite systems", "D) 
+Cellular networks"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q182: Which range represents private Class A addresses?",
+                  options: ["A) 10.0.0.0 - 10.255.255.255", "B) 172.16.0.0 – 172.31.255.255", "C) 192.168.0.0 – 
+192.168.255.255", "D) 127.0.0.0 – 127.255.255.255"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q183: Which range represents private Class B addresses?",
+                  options: ["A) 10.0.0.0 - 10.255.255.255", "B) 172.16.0.0 – 172.31.255.255", "C) 192.168.0.0 – 
+192.168.255.255", "D) 224.0.0.0 – 239.255.255.255"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q184: Which range represents private Class C addresses?",
+                  options: ["A) 10.0.0.0 - 10.255.255.255", "B) 172.16.0.0 – 172.31.255.255", "C) 192.168.0.0 – 
+192.168.255.255", "D) 127.0.0.0 – 127.255.255.255"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q185: What are the address sizes of IPv4 and IPv6?",
+                  options: ["A) 32 bits, 128 bits", "B) 32 byte and 128 byte", "C) 32 byte, 128bits", "D) 32 bits, 128 
+bytes"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q186: The main reason for introducing IPv6 was:",
+                  options: ["A) Faster routers", "B) Address exhaustion in IPv4", "C) Better encryption", "D) Wireless 
+networking"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q187: Which class does the address 150.25.10.5 belong to?",
+                  options: ["A) Class A", "B) Class B", "C) Class C", "D) Class D"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q189: Which class does the address 192.168.1.1 belong to?",
+                  options: ["A) Class A", "B) Class B", "C) Class C", "D) Class D"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q190: Which address below is invalid?",
+                  options: ["A) 192.168.1.10", "B) 172.16.1.5", "C) 256.10.1.1", "D) 10.0.0.1"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q195: Which IPv4 address could represent a host in a Class C network?",
+                  options: ["A) 192.168.1.10", "B) 10.1.1.1", "C) 150.1.1.1", "D) 20.1.1.1"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q196: Which class supports the largest number of hosts?",
+                  options: ["A) Class A", "B) Class B", "C) Class C", "D) Class D"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q197: Which address format is used by IPv6?",
+                  options: ["A) Four decimal octets", "B) Eight hexadecimal blocks", "C) Four binary blocks", "D) Two 
+decimal blocks"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q199: Which address cannot be routed on the public Internet?",
+                  options: ["A) 8.8.8.8", "B) 192.168.1.5", "C) 54.2.3.4", "D) 12.1.1.1"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q200: Which class begins with the first octet 172?",
+                  options: ["A) Class A", "B) Class B", "C) Class C", "D) Class D"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q201: Which protocol is responsible for packet delivery across interconnected networks?",
+                  options: ["A) FTP", "B) HTTP", "C) Internet Protocol", "D) SMTP"],
+                  answer: 2 // C
+              },
+              {
+                  question: "Q202: The Internet Protocol (IP) is responsible for:",
+                  options: ["A) packet addressing and routing", "B) file transfer", "C) signal modulation", "D) 
+encryption"],
+                  answer: 0 // A
+              },
+              {
+                  question: "Q203: An IP address is defined as:",
+                  options: ["A) a physical hardware identifier", "B) a logical address identifying a device in an 
+internetwork", "C) a cable identifier", "D) a port identifier"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q204: IPv4 addresses are commonly represented using:",
+                  options: ["A) hexadecimal notation", "B) dotted decimal notation", "C) binary notation", "D) octal 
+notation"],
+                  answer: 1 // B
+              },
+              {
+                  question: "Q205: Routers use IP addresses primarily to:",
+                  options: ["A) compress packets", "B) determine the path for packet forwarding", "C) generate 
+signals", "D) store packets"],
+                  answer: 1 // B
+              }
+  
+  
+          ];
+  
+          /**
+           * =========================================
+           * State Variables
+           * =========================================
+           */
+          const BATCH_SIZE = 25;
+          let currentBatchIndex = 0;
+          let userAnswers = {}; // Stores answers as key/value pairs { globalQuestionIndex: selectedOptionIndex }
+          let totalCorrect = 0;
+          let totalWrong = 0;
+          let wrongQuestionNumbers = []; // Stores global index of wrongly answered questions
+  
+          // DOM Elements
+          const DOM = {
+              progressInfo: document.getElementById('progressInfo'),
+              questionsContainer: document.getElementById('questionsContainer'),
+              checkResultsBtn: document.getElementById('checkResultsBtn'),
+              nextBatchBtn: document.getElementById('nextBatchBtn'),
+              quizMain: document.getElementById('quizMain'),
+              resultScreen: document.getElementById('resultScreen'),
+              successCard: document.getElementById('successCard'),
+              statCorrect: document.getElementById('statCorrect'),
+              statWrong: document.getElementById('statWrong'),
+              wrongListContainer: document.getElementById('wrongListContainer'),
+              wrongListText: document.getElementById('wrongListText'),
+              restartBtn: document.getElementById('restartBtn'),
+              quizHeader: document.getElementById('quizHeader')
+          };
+  
+          /**
+           * =========================================
+           * Core Logic
+           * =========================================
+           */
+  
+          // Returns the total number of batches/pages needed
+          function getTotalBatches() {
+              return Math.ceil(questions.length / BATCH_SIZE) || 1;
+          }
+  
+          // Initialize or Restart the Quiz
+          function initQuiz() {
+              currentBatchIndex = 0;
+              userAnswers = {};
+              totalCorrect = 0;
+              totalWrong = 0;
+              wrongQuestionNumbers = [];
+  
+              // View transition resets
+              DOM.resultScreen.style.display = 'none';
+              DOM.successCard.classList.remove('active');
+              DOM.quizMain.style.display = 'block';
+              DOM.quizHeader.style.display = 'flex';
+  
+              renderBatch();
+          }
+  
+          // Render a specific batch of 25 questions
+          function renderBatch() {
+              const startIdx = currentBatchIndex * BATCH_SIZE;
+              const endIdx = Math.min(startIdx + BATCH_SIZE, questions.length);
+              const batchQuestions = questions.slice(startIdx, endIdx);
+  
+              // Update Header Progress
+              const totalBatches = getTotalBatches();
+              DOM.progressInfo.textContent = `المجموعة ${currentBatchIndex + 1} من ${totalBatches}`;
+  
+              // Clear current cards
+              DOM.questionsContainer.innerHTML = '';
+  
+              // Generate HTML for current batch
+              batchQuestions.forEach((q, idx) => {
+                  const globalIdx = startIdx + idx;
+                  const delay = idx * 0.05; // staggered animation delay
+  
+                  const qCard = document.createElement('div');
+                  qCard.className = 'question-card fade-in';
+                  qCard.style.animationDelay = `${delay}s`;
+  
+                  // Construct options HTML
+                  const optionsHTML = q.options.map((opt, optIdx) => `
+                      <div class="option" onclick="selectOption(${globalIdx}, ${optIdx})" 
+id="opt-${globalIdx}-${optIdx}">
+                          ${opt}
+                      </div>
+                  `).join('');
+  
+                  qCard.innerHTML = `
+                      <div class="q-number">سؤال ${globalIdx + 1}</div>
+                      <div class="q-text">${q.question}</div>
+                      <div class="options-container" id="options-${globalIdx}">
+                          ${optionsHTML}
+                      </div>
+                  `;
+  
+                  DOM.questionsContainer.appendChild(qCard);
+              });
+  
+              // Manage Action Buttons State
+              DOM.checkResultsBtn.style.display = 'block';
+              DOM.nextBatchBtn.style.display = 'none';
+  
+              // Smooth Scroll to Top
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+  
+          // Handle Option Selection
+          window.selectOption = function (globalIdx, optIdx) {
+              // Prevent selection if results are already showing (Next Button is visible)
+              if (DOM.checkResultsBtn.style.display === 'none') return;
+  
+              userAnswers[globalIdx] = optIdx;
+  
+              // Update UI: Remove 'selected' class from all sibling options
+              const container = document.getElementById(`options-${globalIdx}`);
+              const allOptions = container.querySelectorAll('.option');
+              allOptions.forEach(opt => opt.classList.remove('selected'));
+  
+              // Add 'selected' class to the clicked option
+              document.getElementById(`opt-${globalIdx}-${optIdx}`).classList.add('selected');
+          };
+  
+          // Handle Check Results Action
+          DOM.checkResultsBtn.addEventListener('click', () => {
+              const startIdx = currentBatchIndex * BATCH_SIZE;
+              const endIdx = Math.min(startIdx + BATCH_SIZE, questions.length);
+  
+              // Loop through questions in current batch to evaluate answers
+              for (let i = startIdx; i < endIdx; i++) {
+                  const q = questions[i];
+                  const selectedIdx = userAnswers[i];
+                  const correctIdx = q.answer;
+  
+                  const container = document.getElementById(`options-${i}`);
+                  if (!container) continue;
+  
+                  // Visually lock the container to indicate it's graded
+                  container.classList.add('locked');
+  
+                  if (selectedIdx !== undefined) {
+                      if (selectedIdx === correctIdx) {
+                          // User got it right
+                          document.getElementById(`opt-${i}-${selectedIdx}`).classList.add('correct-answer');
+                          totalCorrect++;
+                      } else {
+                          // User got it wrong
+                          document.getElementById(`opt-${i}-${selectedIdx}`).classList.add('wrong-answer');
+                          // Automatically show the correct answer
+                          document.getElementById(`opt-${i}-${correctIdx}`).classList.add('correct-answer');
+                          totalWrong++;
+                          wrongQuestionNumbers.push(i + 1); // Track 1-indexed global question number
+                      }
+                  } else {
+                      // User didn't answer this question, just show the correct answer
+                      document.getElementById(`opt-${i}-${correctIdx}`).classList.add('correct-answer');
+                      totalWrong++; // Track missed question
+                      wrongQuestionNumbers.push(i + 1);
+                  }
+              }
+  
+              // Swap Buttons
+              DOM.checkResultsBtn.style.display = 'none';
+  
+              if (currentBatchIndex + 1 < getTotalBatches()) {
+                  DOM.nextBatchBtn.textContent = "المجموعة التالية";
+              } else {
+                  DOM.nextBatchBtn.textContent = "إنهاء الاختبار"; // Finish Quiz
+              }
+  
+              DOM.nextBatchBtn.style.display = 'block';
+          });
+  
+          // Handle Next Batch / End Quiz Action
+          DOM.nextBatchBtn.addEventListener('click', () => {
+              currentBatchIndex++;
+  
+              // Check if there are more batches
+              if (currentBatchIndex < getTotalBatches()) {
+                  renderBatch();
+              } else {
+                  // End of quiz logic
+                  DOM.quizMain.style.display = 'none';
+                  DOM.quizHeader.style.display = 'none';
+                  DOM.resultScreen.style.display = 'flex';
+                  DOM.successCard.classList.add('active'); // triggers animation
+  
+                  // Update Score Board text
+                  DOM.statCorrect.textContent = `عدد الإجابات الصحيحة: ${totalCorrect}`;
+                  DOM.statWrong.textContent = `عدد الإجابات الخاطئة: ${totalWrong}`;
+                  
+                  if (wrongQuestionNumbers.length > 0) {
+                      DOM.wrongListContainer.style.display = 'block';
+                      DOM.wrongListText.textContent = wrongQuestionNumbers.join(', ');
+                  } else {
+                      DOM.wrongListContainer.style.display = 'none';
+                  }
+              }
+          });
+  
+          // Handle Restart Action
+          DOM.restartBtn.addEventListener('click', () => {
+              initQuiz();
+          });
+  
+          /**
+           * =========================================
+           * Application Startup
+           * =========================================
+           */
+          window.addEventListener('DOMContentLoaded', () => {
+              initQuiz();
+          });
+  
+
+  </body>
+  
+  </html>
+
+
