@@ -1,0 +1,20 @@
+[build]
+  # The directory to publish is the root directory
+  publish = "."
+
+[[headers]]
+  # Cache static assets to make the PWA load fast
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  # Cache icons and manifest aggressively
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
