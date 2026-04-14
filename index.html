@@ -455,1045 +455,544 @@
          * =========================================
          */
         // Placeholder Data: You can replace this array with the full 205 questions array.
-        const questions = [
-
-            // --- الأسئلة من ملف 1 (أساسيات الشبكات) ---
+        const finalQuestions = [
+            // --- Lect-1 ---
             {
-                question: "1. Computer network is best defined as a system that:",
-                options: ["A) Stores digital information centrally", "B) Connects multiple computers to exchange data and share resources", "C) Operates independently without communication", "D) Performs distributed data processing only"],
-                answer: 1 // B [cite: 1]
+                question: "1. What is the mathematical definition of an image?",
+                options: ["a) A 3D model of an object", "b) A 2D function f(x,y)", "c) A collection of pixels with no coordinates", "d) A random set of numbers"],
+                answer: 1 // b
             },
             {
-                question: "2. Which characteristic distinguishes a LAN from a WAN?",
-                options: ["A) Data rate only", "B) Transmission protocol", "C) Geographic coverage area", "D) Number of connected devices"],
-                answer: 2 // C [cite: 1]
+                question: "2. What are the two fundamental processes required to create a digital image from a continuous one?",
+                options: ["a) Sampling and quantization", "b) Storage and display", "c) Enhancement and restoration", "d) Compression and filtering"],
+                answer: 0 // a
             },
             {
-                question: "3. Which network component determines the optimal path for forwarding packets?",
-                options: ["A) Hub", "B) Router", "C) Switch", "D) Repeater"],
-                answer: 1 // B [cite: 1]
+                question: "3. What is the smallest unit of information in a digital image?",
+                options: ["a) A bit", "b) A byte", "c) A pixel", "d) A matrix"],
+                answer: 2 // c
             },
             {
-                question: "4. Which device converts digital signals into modulated analog signals for transmission?",
-                options: ["A) Router", "B) Hub", "C) Modem", "D) Bridge"],
-                answer: 2 // C [cite: 1]
+                question: "4. If you have an 8-bit grayscale image, how many different intensity levels can each pixel have?",
+                options: ["a) 8", "b) 16", "c) 128", "d) 256"],
+                answer: 3 // d
             },
             {
-                question: "5. One major advantage of networking is:",
-                options: ["A) Elimination of data redundancy", "B) Application and resource sharing", "C) Removal of security risks", "D) Reduction of network complexity"],
-                answer: 1 // B [cite: 1]
+                question: "5. How many bytes per pixel are typically required to store an RGB color image?",
+                options: ["a) 1 byte", "b) 2 bytes", "c) 3 bytes", "d) 8 bytes"],
+                answer: 2 // c
             },
             {
-                question: "6. Which hardware component enables a computer to connect to a network?",
-                options: ["A) Router", "B) NIC", "C) Modem", "D) Hub"],
-                answer: 1 // B [cite: 1]
+                question: "6. What type of digital image uses only 1 bit per pixel?",
+                options: ["a) Grayscale", "b) RGB color", "c) Binary", "d) Ultrasound"],
+                answer: 2 // c
             },
             {
-                question: "7. Centralized data management enables organizations to:",
-                options: ["A) Store data independently on each computer", "B) Manage and control data from a central system", "C) Eliminate network administration", "D) Remove the need for servers"],
-                answer: 1 // B [cite: 1]
+                question: "7. What does an RGB image consist of?",
+                options: ["a) A single matrix of numbers", "b) A stack of three matrices, for red, green, and blue", "c) A single channel of binary data", "d) A combination of two matrices for luminance and chrominance"],
+                answer: 1 // b
             },
             {
-                question: "8. Which of the following is considered a potential disadvantage of networking?",
-                options: ["A) Application sharing", "B) Hardware cost reduction", "C) Security threats", "D) Resource accessibility"],
-                answer: 2 // C [cite: 1]
+                question: "8. Which of the following is an example of an image source that uses acoustic waves rather than electromagnetic radiation?",
+                options: ["a) Ultrasound imaging", "b) X-ray imaging", "c) Infrared satellite imaging", "d) Gamma-ray imaging"],
+                answer: 0 // a
             },
             {
-                question: "9. In a client-server architecture, network services are primarily provided by:",
-                options: ["A) Clients", "B) Servers", "C) Switches", "D) Hubs"],
-                answer: 1 // B [cite: 1]
+                question: "9. What is the main purpose of the 'Image Enhancement' step in a digital image processing pipeline?",
+                options: ["a) To correct a known degradation using a mathematical model", "b) To partition an image into meaningful regions", "c) To improve the appearance of an image, often in a subjective way", "d) To reduce storage costs by compressing the data"],
+                answer: 2 // c
             },
             {
-                question: "10. Clients in a client-server network typically:",
-                options: ["A) Provide services", "B) Request services from servers", "C) Route packets", "D) Store data centrally"],
-                answer: 1 // B [cite: 1]
+                question: "10. Which component of an image processing system is responsible for capturing the image and sets the upper bound on its quality?",
+                options: ["a) The computer's processor", "b) The image acquisition hardware", "c) The display monitor", "d) The archival storage"],
+                answer: 1 // b
             },
             {
-                question: "11. In networking terminology, a workstation refers to:",
-                options: ["A) A network server", "B) A computer connected to a network", "C) A device used only for routing", "D) A network storage unit"],
-                answer: 1 // B [cite: 1]
+                question: "11. Which imaging band is used for mineral mapping by NASA's LANDSAT satellite?",
+                options: ["a) Visible blue (0.45-0.52 µm)", "b) Visible red (0.63-0.69 µm)", "c) Near infrared (0.76-0.90 µm)", "d) Middle infrared (2.08-2.35 μm)"],
+                answer: 3 // d
             },
             {
-                question: "12. A network that interconnects LANs across cities or countries is classified as:",
-                options: ["A) MAN", "B) WAN", "C) LAN", "D) PAN"],
-                answer: 1 // B [cite: 1]
+                question: "12. A mid-level image processing task typically involves:",
+                options: ["a) Denoising an image", "b) Sharpening an image", "c) Segmenting an image to extract features", "d) Displaying an image on a screen"],
+                answer: 2 // c
             },
             {
-                question: "13. SONET standards were developed by:",
-                options: ["A) IEEE", "B) ANSI", "C) ITU", "D) ISO"],
-                answer: 1 // B [cite: 1]
+                question: "13. In the context of the course, what does a higher bit depth in an image provide?",
+                options: ["a) Reduced 'banding' and support for high dynamic range scenes", "b) Less storage space is needed", "c) Faster image processing", "d) A smaller image in terms of pixel dimensions"],
+                answer: 0 // a
             },
             {
-                question: "14. Bluetooth technology is designed mainly for:",
-                options: ["A) Long-distance communication", "B) Short-range wireless communication", "C) Optical fiber networks", "D) WAN infrastructure"],
-                answer: 1 // B [cite: 1]
+                question: "14. What is the typical output of a low-level image processing operation?",
+                options: ["a) A decision, like 'authorized'", "b) A set of features, like area or perimeter", "c) Another image", "d) A text description of the scene"],
+                answer: 2 // c
             },
             {
-                question: "15. A Pico net may contain up to:",
-                options: ["A) 4 devices", "B) 6 devices", "C) 8 devices", "D) 16 devices"],
-                answer: 2 // C [cite: 1]
-            },
-            {
-                question: "16. The controlling node in a Pico net is known as the:",
-                options: ["A) Master node", "B) Primary station", "C) Server node", "D) Access controller"],
-                answer: 0 // A [cite: 1]
-            },
-            {
-                question: "17. Other devices in the Pico net are called:",
-                options: ["A) Clients", "B) Secondary stations", "C) Routers", "D) Hubs"],
-                answer: 1 // B [cite: 1]
-            },
-            {
-                question: "18. Network topology refers to the:",
-                options: ["A) Protocol used in communication", "B) Physical arrangement of network nodes", "C) Data transmission rate", "D) Type of network security"],
-                answer: 1 // B [cite: 1]
-            },
-            {
-                question: "19. Which topology uses a single shared communication cable?",
-                options: ["A) Ring", "B) Bus", "C) Star", "D) Mesh"],
-                answer: 1 // B [cite: 1]
-            },
-            {
-                question: "20. Which topology connects each device to a central hub or switch?",
-                options: ["A) Bus", "B) Ring", "C) Star", "D) Hybrid"],
-                answer: 2 // C [cite: 1]
-            },
-            // --- الأسئلة من ملف 6 (المسار الرقمي) ---
-            {
-                question: "Q21: In a ring topology, network access is typically controlled by:",
-                options: ["A) Broadcast signals", "B) Token passing", "C) Packet flooding", "D) Central routing"],
-                answer: 1 // B
-            },
-            {
-                question: "Q22: Which topology simplifies the process of adding new devices?",
-                options: ["A) Bus", "B) Star", "C) Ring", "D) Linear"],
-                answer: 1 // B
-            },
-            {
-                question: "Q23: Transmission mode describes:",
-                options: ["A) Signal frequency", "B) Direction of signal flow between devices", "C) Type of network topology", "D) Network bandwidth"],
-                answer: 1 // B
-            },
-            {
-                question: "Q24: In simplex transmission:",
-                options: ["A) Both devices transmit simultaneously", "B) Communication occurs in one direction only", "C) Data alternates between devices", "D) Multiple channels are used"],
-                answer: 1 // B
-            },
-            {
-                question: "Q25: Half-duplex communication allows:",
-                options: ["A) Simultaneous transmission and reception", "B) One-way communication only", "C) Bidirectional communication but not simultaneously", "D) Parallel communication channels"],
-                answer: 2 // C
-            },
-            {
-                question: "Q26: Full-duplex communication allows:",
-                options: ["A) Two devices to transmit simultaneously", "B) Only sequential communication", "C) Half-rate communication", "D) One-direction communication"],
-                answer: 0 // A
-            },
-            {
-                question: "Q27: Transmission media that use physical cables are classified as:",
-                options: ["A) Unguided media", "B) Guided media", "C) Broadcast media", "D) Satellite media"],
-                answer: 1 // B
-            },
-            {
-                question: "Q28: Twisted pair cables reduce electromagnetic interference primarily by:",
-                options: ["A) Increasing signal amplitude", "B) Twisting copper conductors together", "C) Using optical transmission", "D) Increasing transmission voltage"],
-                answer: 1 // B
-            },
-            {
-                question: "Q29: Which cable type transmits data using light signals?",
-                options: ["A) Coaxial", "B) Twisted pair", "C) Fiber optic", "D) UTP"],
-                answer: 2 // C
-            },
-            {
-                question: "Q30: Single-mode fiber typically uses:",
-                options: ["A) LED sources", "B) Laser diodes", "C) Copper conductors", "D) Electrical pulses"],
-                answer: 1 // B
-            },
-            {
-                question: "Q31: Unguided transmission media send signals through:",
-                options: ["A) Optical fibers", "B) Copper wires", "C) Free space or air", "D) Coaxial cables"],
-                answer: 2 // C
-            },
-            {
-                question: "Q32: The network core primarily consists of:",
-                options: ["A) Hosts", "B) Routers", "C) Peripheral devices", "D) End systems"],
-                answer: 1 // B
-            },
-            {
-                question: "Q33: Circuit switching requires:",
-                options: ["A) Packet segmentation", "B) Establishing a dedicated path before transmission", "C) Dynamic routing only", "D) Broadcast communication"],
-                answer: 1 // B
-            },
-            {
-                question: "Q34: Packet switching divides messages into:",
-                options: ["A) Frames only", "B) Packets", "C) Signals", "D) Segments only"],
-                answer: 1 // B
-            },
-            {
-                question: "Q35: In store-and-forward packet switching, a router must:",
-                options: ["A) Forward packets immediately", "B) Receive the entire packet before forwarding", "C) Ignore packet headers", "D) Convert packets to analog signals"],
-                answer: 1 // B
-            },
-            {
-                question: "Q36: Modulation is defined as:",
-                options: ["A) Encoding binary data", "B) Altering a carrier signal to convey information", "C) Amplifying digital signals", "D) Compressing network data"],
-                answer: 1 // B
-            },
-            {
-                question: "Q37: Amplitude Modulation changes:",
-                options: ["A) Frequency", "B) Amplitude", "C) Phase", "D) Data rate"],
-                answer: 1 // B
-            },
-            {
-                question: "Q38: Frequency Modulation changes:",
-                options: ["A) Signal amplitude", "B) Signal phase", "C) Carrier frequency", "D) Transmission medium"],
-                answer: 2 // C
-            },
-            {
-                question: "Q39: Phase Modulation modifies:",
-                options: ["A) Signal power", "B) Signal phase", "C) Signal bandwidth", "D) Signal duration"],
-                answer: 1 // B
-            },
-            {
-                question: "Q40: A modem primarily functions to:",
-                options: ["A) Route packets", "B) Convert digital signals into modulated analog signals", "C) Control network topology", "D) Manage switching tables"],
-                answer: 1 // B
+                question: "15. What is the primary function of the 'knowledge base' in an image processing system?",
+                options: ["a) To store the final processed images", "b) To provide prior information like expected object sizes and shapes", "c) To control the image acquisition hardware", "d) To display the image to the user"],
+                answer: 1 // b
             },
 
-            // --- الأسئلة من ملف 3 (مراجعة 41-60) ---
+            // --- Lect-2 ---
             {
-                question: "41. RS-232 and RS-422 represent:",
-                options: ["A) Routing protocols", "B) Physical layer standards", "C) Network topologies", "D) Encryption methods"],
-                answer: 1 // B [cite: 3]
+                question: "1. What are the two main types of photoreceptors in the human retina?",
+                options: ["a) Lenses and corneas", "b) Rods and cones", "c) Fovea and optic nerve", "d) Pixels and sensors"],
+                answer: 1 // b
             },
             {
-                question: "42. Hubs primarily operate at the:",
-                options: ["A) Network layer", "B) Transport layer", "C) Physical layer", "D) Application layer"],
-                answer: 2 // C [cite: 3]
+                question: "2. Which type of photoreceptor is responsible for high-resolution color vision?",
+                options: ["a) Rods", "b) Cones", "c) Optic nerve fibers", "d) The iris"],
+                answer: 1 // b
             },
             {
-                question: "43. Which device operates primarily at Layer 2 (Data Link layer)?",
-                options: ["A) Router", "B) Hub", "C) Repeater", "D) Switch"],
-                answer: 3 // D [cite: 3]
+                question: "3. What does the Weber ratio describe in human visual perception?",
+                options: ["a) The speed of light in a vacuum", "b) The exact number of colors a human can see", "c) The size of the blind spot", "d) The threshold increment needed to notice a change in intensity"],
+                answer: 3 // d
             },
             {
-                question: "44. Which device operates primarily at Layer 3 (Network layer)?",
-                options: ["A) Switch", "B) Router", "C) Hub", "D) Repeater"],
-                answer: 1 // B [cite: 3]
+                question: "4. According to the image formation model f(x,y)=i(x,y)*r(x,y), what does the term r(x, y) represent?",
+                options: ["a) The reflectance of the objects in the scene", "b) The illumination striking the scene", "c) The digital pixel value", "d) The wavelength of the light source"],
+                answer: 0 // a
             },
             {
-                question: "45. Port addresses are used to identify specific processes at which layer?",
-                options: ["A) Network layer", "B) Data Link layer", "C) Transport layer", "D) Application layer"],
-                answer: 2 // C [cite: 3]
+                question: "5. The visible spectrum for humans is a narrow band of the electromagnetic spectrum. Approximately what is its wavelength range?",
+                options: ["a) 1 mm to 1 m", "b) 10 nm to 100 nm", "c) 0.43 µm to 0.79 µm", "d) 10 µm to 100 µm"],
+                answer: 2 // c
             },
             {
-                question: "46. Which address is considered a physical address?",
-                options: ["A) IP address", "B) Port address", "C) MAC address", "D) Logical address"],
-                answer: 2 // C [cite: 3]
+                question: "6. Which of the following is a key difference between photopic and scotopic vision?",
+                options: ["a) Photopic vision is used in low light, scotopic in bright light", "b) Photopic vision provides color, scotopic provides only grayscale", "c) Photopic vision uses rods, scotopic uses cones", "d) Photopic vision has low resolution, scotopic has high resolution"],
+                answer: 1 // b
             },
             {
-                question: "47. Which address is used to identify a device across multiple networks?",
-                options: ["A) MAC address", "B) IP address", "C) Physical address", "D) Hardware address"],
-                answer: 1 // B [cite: 3]
+                question: "7. What is the main engineering trade-off when using a single-sensor imaging system compared to a 2D array?",
+                options: ["a) Higher speed but lower precision", "b) Simpler sensor but requires mechanical scanning, making it slower", "c) Better color accuracy but worse resolution", "d) Cheaper optics but requires more complex digitization"],
+                answer: 1 // b
             },
             {
-                question: "48. The primary purpose of an IP address is:",
-                options: ["A) Physical identification", "B) Logical addressing and routing", "C) Data encryption", "D) Error recovery"],
-                answer: 1 // B [cite: 3]
+                question: "8. The relationship between the speed of light (c), wavelength (λ), and frequency (v) is given by:",
+                options: ["a) c = λ*v", "b) c = λ/v", "c) c = v/λ", "d) c = λ+v"],
+                answer: 0 // a
             },
             {
-                question: "49. Port numbers identify:",
-                options: ["A) A specific application/process", "B) A network interface card", "C) A physical cable", "D) A network topology"],
-                answer: 0 // A [cite: 3]
+                question: "9. What is the purpose of an IR-cut filter in a consumer digital camera?",
+                options: ["a) To increase the camera's sensitivity to infrared light", "b) To block infrared light so the image better matches human vision", "c) To protect the sensor from physical damage", "d) To add artistic effects to the photograph"],
+                answer: 1 // b
             },
             {
-                question: "50. What is the primary purpose of using layered models in networking?",
-                options: ["A) Increasing hardware complexity", "B) Simplifying network design and implementation", "C) Eliminating protocols", "D) Reducing transmission speed"],
-                answer: 1 // B [cite: 3]
+                question: "10. In the context of visual perception, what do Mach bands demonstrate?",
+                options: ["a) The eye's ability to see in color", "b) The exact measurement of light intensity", "c) That perceived brightness overshoots near sharp intensity transitions", "d) The distribution of rods and cones in the retina"],
+                answer: 2 // c
             },
             {
-                question: "51. Layered models facilitate interoperability between:",
-                options: ["A) Identical hardware systems", "B) Different hardware and software platforms", "C) Single-vendor networks", "D) Local devices only"],
-                answer: 1 // B [cite: 3]
+                question: "11. Which sensor geometry is the basis for medical computerized axial tomography (CAT) imaging?",
+                options: ["a) A single sensor", "b) A 2D sensor array", "c) A circular or ring sensor strip", "d) A linear sensor strip"],
+                answer: 2 // c
             },
             {
-                question: "52. Standardization across manufacturers is achieved through:",
-                options: ["A) Network cables", "B) Layered architecture", "C) High voltages", "D) Faster CPUs"],
-                answer: 1 // B [cite: 3]
+                question: "12. What happens to the photon energy as the wavelength of electromagnetic radiation decreases?",
+                options: ["a) The energy decreases", "b) The energy increases", "c) The energy remains constant", "d) The energy becomes zero"],
+                answer: 1 // b
             },
             {
-                question: "53. Breaking communication into layers primarily helps to:",
-                options: ["A) Reduce bandwidth", "B) Simplify system design", "C) Increase costs", "D) Eliminate security"],
-                answer: 1 // B [cite: 3]
+                question: "13. Why are stars more visible when you look slightly away from them at night?",
+                options: ["a) Because the fovea is more sensitive in low light", "b) Because rods, which are more sensitive, are concentrated in the periphery", "c) Because cones, which detect color, are better for seeing stars", "d) Because the pupil dilates more when looking away"],
+                answer: 1 // b
             },
             {
-                question: "54. The OSI model was developed by:",
-                options: ["A) IEEE", "B) ISO", "C) IETF", "D) ANSI"],
-                answer: 1 // B [cite: 3]
+                question: "14. In a flatbed scanner, which sensor geometry is used to create the 2D image?",
+                options: ["a) A linear sensor strip captures one line, and motion provides the second dimension", "b) A 2D sensor array captures the whole page at once", "c) A single sensor moves in both x and y directions", "d) A circular sensor strip rotates around the page"],
+                answer: 0 // a
             },
             {
-                question: "55. A set of rules governing communication between devices is called:",
-                options: ["A) Interface", "B) Protocol", "C) Packet", "D) Frame"],
-                answer: 1 // B [cite: 3]
-            },
-            {
-                question: "56. Each layer in a network model provides services to:",
-                options: ["A) The same layer", "B) The layer above it", "C) The physical medium", "D) The user only"],
-                answer: 1 // B [cite: 3]
-            },
-            {
-                question: "57. What is the Protocol Data Unit (PDU) at the Data Link layer?",
-                options: ["A) Packet", "B) Frame", "C) Segment", "D) Bit"],
-                answer: 1 // B [cite: 3]
-            },
-            {
-                question: "58. The process of adding headers as data moves down the layers is called:",
-                options: ["A) Fragmentation", "B) Encapsulation", "C) Routing", "D) Multiplexing"],
-                answer: 1 // B [cite: 3]
-            },
-            {
-                question: "59. A network model organizes communication tasks into:",
-                options: ["A) Channels", "B) Layers", "C) Frames", "D) Packets"],
-                answer: 1 // B [cite: 3]
-            },
-            {
-                question: "60. In a layered architecture, each layer provides services to:",
-                options: ["A) The same layer", "B) The layer above it", "C) The physical medium", "D) The router"],
-                answer: 1 // B [cite: 3]
+                question: "15. What is the key constraint regarding wavelength when trying to image an object?",
+                options: ["a) The wavelength must be much larger than the object", "b) The wavelength must be comparable to or smaller than the object size", "c) The wavelength has no effect on the ability to image an object", "d) The wavelength must be in the visible spectrum"],
+                answer: 1 // b
             },
 
-            // --- الأسئلة من ملف 4 (مراجعة 61-80) ---
+            // --- Lect-3 ---
             {
-                question: "61. Communication between corresponding (peer) layers in two systems is called:",
-                options: ["A) Logical communication", "B) Direct communication", "C) Physical communication", "D) Channel communication"],
-                answer: 0 // A [cite: 4]
+                question: "1. What are the two fundamental processes required to convert a continuous image function f(x,y) into a digital image?",
+                options: ["a) Enhancement and restoration", "b) Compression and storage", "c) Sampling and quantization", "d) Display and interpretation"],
+                answer: 2 // c
             },
             {
-                question: "62. The process of adding headers to data as it moves down the layers is called:",
-                options: ["A) Fragmentation", "B) Encapsulation", "C) Multiplexing", "D) Routing"],
-                answer: 1 // B [cite: 4]
+                question: "2. In the context of digital images, what does sampling discretize?",
+                options: ["a) The intensity values", "b) The spatial coordinates (x, y)", "c) The color of the pixels", "d) The file size of the image"],
+                answer: 1 // b
             },
             {
-                question: "63. The process of removing headers as data moves up the layers is called:",
-                options: ["A) Encapsulation", "B) De-capsulation", "C) Fragmentation", "D) Multiplexing"],
-                answer: 1 // B [cite: 4]
+                question: "3. If a digital image uses k bits per pixel, how many possible intensity levels (L) can each pixel have?",
+                options: ["a) L = k", "b) L = 2*k", "c) L = k^2", "d) L = 2^k"],
+                answer: 3 // d
             },
             {
-                question: "64. Which OSI layer is responsible for data transmission over the physical medium?",
-                options: ["A) Network", "B) Physical", "C) Transport", "D) Data link"],
-                answer: 1 // B [cite: 4]
+                question: "4. What is the visual artifact called when an image has too few intensity levels, creating visible steps in smooth areas?",
+                options: ["a) Banding or false contouring", "b) Aliasing", "c) Blurring", "d) Noise"],
+                answer: 0 // a
             },
             {
-                question: "65. Which OSI layer handles node-to-node (hop-to-hop) delivery?",
-                options: ["A) Network", "B) Data link", "C) Transport", "D) Physical"],
-                answer: 1 // B [cite: 4]
+                question: "5. How is a grayscale image typically represented in a computer's memory?",
+                options: ["a) As a single number", "b) As a 1D array of color values", "c) As three separate matrices", "d) As an MxN array of integers"],
+                answer: 3 // d
             },
             {
-                question: "66. Which OSI layer is responsible for logical addressing and routing?",
-                options: ["A) Network layer", "B) Data link layer", "C) Transport layer", "D) Physical layer"],
-                answer: 0 // A [cite: 4]
+                question: "6. What is the formula for calculating the total storage in bits for a digital image?",
+                options: ["a) M + N + C + k", "b) M x N x C x k", "c) (M x N) / (C x k)", "d) M^2 x N^2 x C"],
+                answer: 1 // b
             },
             {
-                question: "67. Which OSI layer ensures reliable process-to-process delivery?",
-                options: ["A) Network layer", "B) Data link layer", "C) Transport layer", "D) Session layer"],
-                answer: 2 // C [cite: 4]
+                question: "7. What does 'spatial resolution' refer to in a digital image?",
+                options: ["a) The number of bits used per pixel", "b) The number of colors an image can display", "c) The smallest discernible detail, controlled by the number of pixels", "d) The brightness of the image"],
+                answer: 2 // c
             },
             {
-                question: "68. Which OSI layer is responsible for dialog control and synchronization?",
-                options: ["A) Session layer", "B) Network layer", "C) Transport layer", "D) Physical layer"],
-                answer: 0 // A [cite: 4]
+                question: "8. What is the primary trade-off when increasing the spatial resolution (MXN) of an image?",
+                options: ["a) Better color accuracy but lower contrast", "b) Smoother shading but less detail", "c) More spatial detail but increased memory, bandwidth, and processing time", "d) Faster processing but more image artifacts"],
+                answer: 2 // c
             },
             {
-                question: "69. Which OSI layer deals with data translation, encryption, and compression?",
-                options: ["A) Presentation layer", "B) Session layer", "C) Application layer", "D) Transport layer"],
-                answer: 0 // A [cite: 4]
+                question: "9. Which interpolation method uses only the closest original pixel to determine the value of a new pixel?",
+                options: ["a) Bilinear interpolation", "b) Bicubic interpolation", "c) Linear interpolation", "d) Nearest neighbor interpolation"],
+                answer: 3 // d
             },
             {
-                question: "70. Which OSI layer provides services directly to the end user?",
-                options: ["A) Application layer", "B) Transport layer", "C) Network layer", "D) Session layer"],
-                answer: 0 // A [cite: 4]
+                question: "10. An image has 4 bits per pixel. How many intensity levels does it have?",
+                options: ["a) 16", "b) 4", "c) 8", "d) 32"],
+                answer: 0 // a
             },
             {
-                question: "71. Which layer performs framing?",
-                options: ["A) Data link layer", "B) Network layer", "C) Physical layer", "D) Transport layer"],
-                answer: 0 // A [cite: 4]
+                question: "11. Which interpolation method generally produces the sharpest details and best edge preservation but requires the most computation?",
+                options: ["a) Nearest neighbor", "b) Bilinear", "c) Bicubic", "d) Pixel duplication"],
+                answer: 2 // c
             },
             {
-                question: "72. Which layer performs media access control?",
-                options: ["A) Data link layer", "B) Network layer", "C) Physical layer", "D) Transport layer"],
-                answer: 0 // A [cite: 4]
+                question: "12. In an 8-bit grayscale image, what is the typical range of pixel values?",
+                options: ["a) 0 to 1", "b) 0 to 7", "c) 0 to 255", "d) 0 to 1023"],
+                answer: 2 // c
             },
             {
-                question: "73. Which layer is responsible for determining the best path for data?",
-                options: ["A) Network layer", "B) Data link layer", "C) Transport layer", "D) Session layer"],
-                answer: 0 // A [cite: 4]
+                question: "13. If the sampling density is too low for a repetitive pattern, what artifact can occur?",
+                options: ["a) Aliasing (false patterns)", "b) Banding", "c) False contouring", "d) Blurring"],
+                answer: 0 // a
             },
             {
-                question: "74. Flow control between end systems is handled by:",
-                options: ["A) Network layer", "B) Transport layer", "C) Physical layer", "D) Data link layer"],
-                answer: 1 // B [cite: 4]
+                question: "14. Bilinear interpolation uses how many of the nearest known pixels to estimate a new pixel value?",
+                options: ["a) 1", "b) 4", "c) 16", "d) All pixels in the image"],
+                answer: 1 // b
             },
             {
-                question: "75. Error detection at the frame level occurs in:",
-                options: ["A) Transport layer", "B) Data link layer", "C) Network layer", "D) Physical layer"],
-                answer: 1 // B [cite: 4]
-            },
-            {
-                question: "76. Reliable data transfer is the primary responsibility of:",
-                options: ["A) Network layer", "B) Transport layer", "C) Data link layer", "D) Session layer"],
-                answer: 1 // B [cite: 4]
-            },
-            {
-                question: "77. The data unit at the transport layer is called:",
-                options: ["A) Frame", "B) Packet", "C) Segment", "D) Bit"],
-                answer: 2 // C [cite: 4]
-            },
-            {
-                question: "78. The data unit at the network layer is called:",
-                options: ["A) Frame", "B) Packet", "C) Segment", "D) Bit"],
-                answer: 1 // B [cite: 4]
-            },
-            {
-                question: "79. The data unit at the data link layer is called:",
-                options: ["A) Frame", "B) Segment", "C) Packet", "D) Bit"],
-                answer: 0 // A [cite: 4]
-            },
-            {
-                question: "80. The data unit at the physical layer is:",
-                options: ["A) Packet", "B) Frame", "C) Bit", "D) Segment"],
-                answer: 2 // C [cite: 4]
+                question: "15. What is the result of quantizing a 4x4 image with 8-bit values to 2-bit values?",
+                options: ["a) The image has more spatial detail", "b) The image has fewer intensity levels", "c) The image size becomes larger", "d) The image becomes a color image"],
+                answer: 1 // b
             },
 
-            // --- الأسئلة من ملف 5 (مراجعة 81-100) ---
+            // --- Lect-4 ---
             {
-                question: "81. Which layer is responsible for synchronization of communication?",
-                options: ["A) Session layer", "B) Network layer", "C) Transport layer", "D) Physical layer"],
-                answer: 0 // A [cite: 5]
+                question: "1. What are the four neighbors of a pixel p(x, y) that make up its 4-neighborhood N4(p)?",
+                options: ["a) The four diagonal pixels", "b) The pixels at (x+1, y), (x-1, y), (x,y+1), and (x,y-1)", "c) All eight surrounding pixels", "d) The pixels directly above and below only"],
+                answer: 1 // b
             },
             {
-                question: "82. Encapsulation occurs when data moves:",
-                options: ["A) Up the layers", "B) Down the layers", "C) Across the network", "D) Through routers"],
-                answer: 1 // B [cite: 5]
+                question: "2. The 8-neighborhood N8(p) of a pixel p is defined as:",
+                options: ["a) Only the four diagonal neighbors", "b) Only the four horizontal and vertical neighbors", "c) The union of N4(p) and ND(p)", "d) The four pixels with the highest intensity values"],
+                answer: 2 // c
             },
             {
-                question: "83. De-capsulation occurs at the:",
-                options: ["A) Receiving device", "B) Sending device", "C) Router", "D) Switch"],
-                answer: 0 // A [cite: 5]
+                question: "3. In the context of pixel adjacency, what does the set V represent?",
+                options: ["a) The set of all pixel coordinates in the image", "b) The set of intensity values that are considered 'eligible' for connection", "c) The set of diagonal neighbors only", "d) The set of boundary pixels in the image"],
+                answer: 1 // b
             },
             {
-                question: "84. Which OSI layer is responsible for encryption?",
-                options: ["A) Presentation layer", "B) Application layer", "C) Session layer", "D) Transport layer"],
-                answer: 0 // A [cite: 5]
+                question: "4. Under 4-adjacency, two pixels p and q (both with values in V) are adjacent if:",
+                options: ["a) q in N8(p)", "b) q in ND(p)", "c) q is any pixel in the image", "d) q in N4(p)"],
+                answer: 3 // d
             },
             {
-                question: "85. Which OSI layer interacts directly with software applications?",
-                options: ["A) Application layer", "B) Transport layer", "C) Session layer", "D) Presentation layer"],
-                answer: 0 // A [cite: 5]
+                question: "5. What is the main reason for using m-adjacency (mixed adjacency)?",
+                options: ["a) It removes the ambiguity that can occur with 8-adjacency", "b) It is faster to compute than other adjacencies", "c) It allows diagonal connections in all cases", "d) It only uses vertical and horizontal connections"],
+                answer: 0 // a
             },
             {
-                question: "86. Process-to-process communication is the responsibility of:",
-                options: ["A) Transport layer", "B) Network layer", "C) Data link layer", "D) Physical layer"],
-                answer: 0 // A [cite: 5]
+                question: "6. A digital path from pixel p to pixel q is defined as:",
+                options: ["a) A straight line between p and q", "b) A sequence of pixels where each successive pair is adjacent", "c) The set of all pixels with the same intensity as p", "d) The shortest Euclidean distance between them"],
+                answer: 1 // b
             },
             {
-                question: "87. Hop-to-hop delivery is the responsibility of:",
-                options: ["A) Data link layer", "B) Network layer", "C) Transport layer", "D) Session layer"],
-                answer: 0 // A [cite: 5]
+                question: "7. A subset R of pixels is considered a region if:",
+                options: ["a) All pixels in R have the same value", "b) R is a connected set", "c) R is a square shape", "d) R contains at least 10 pixels"],
+                answer: 1 // b
             },
             {
-                question: "88. End-to-end delivery is the responsibility of:",
-                options: ["A) Transport layer", "B) Data link layer", "C) Physical layer", "D) Network layer"],
-                answer: 0 // A [cite: 5]
+                question: "8. The boundary of a region R consists of:",
+                options: ["a) All pixels inside R", "b) Only the four corner pixels of R", "c) Pixels with the highest intensity in R", "d) Pixels in R that are adjacent to pixels in the background"],
+                answer: 3 // d
             },
             {
-                question: "89. Which layer ensures data compatibility between different systems?",
-                options: ["A) Presentation layer", "B) Session layer", "C) Application layer", "D) Transport layer"],
-                answer: 0 // A [cite: 5]
+                question: "9. What is a key difference between a boundary and an edge?",
+                options: ["a) A boundary is a local concept, while an edge is a global concept", "b) A boundary forms a closed path around a region, while edges can be broken", "c) Boundaries are found using derivatives, while edges use adjacency rules", "d) There is no difference; they are the same thing"],
+                answer: 1 // b
             },
             {
-                question: "90. Media access control occurs at which layer?",
-                options: ["A) Data link layer", "B) Physical layer", "C) Network layer", "D) Transport layer"],
-                answer: 0 // A [cite: 5]
+                question: "10. Which distance measure corresponds to the 'city-block' or 'Manhattan' distance?",
+                options: ["a) Euclidean distance (De)", "b) Chessboard distance (D8)", "c) City-block distance (D4)", "d) m-distance"],
+                answer: 2 // c
             },
             {
-                question: "91. Data compression is a function of which layer?",
-                options: ["A) Presentation layer", "B) Application layer", "C) Session layer", "D) Transport layer"],
-                answer: 0 // A [cite: 5]
+                question: "11. For two pixels p and q, the chessboard distance D8 is defined as:",
+                options: ["a) |x-s| + |y-t|", "b) sqrt((x-s)^2 + (y-t)^2)", "c) max(|x-s|, |y-t|)", "d) min(|x-s|, |y-t|)"],
+                answer: 2 // c
             },
             {
-                question: "92. Managing dialogue control is a function of:",
-                options: ["A) Session layer", "B) Network layer", "C) Transport layer", "D) Physical layer"],
-                answer: 0 // A [cite: 5]
+                question: "12. Which distance measure is directly related to the number of steps needed if you can only move to 4-neighbors?",
+                options: ["a) Euclidean distance", "b) D4 distance", "c) D8 distance", "d) m-distance"],
+                answer: 1 // b
             },
             {
-                question: "93. Converting bits into signals is a function of:",
-                options: ["A) Physical layer", "B) Data link layer", "C) Network layer", "D) Transport layer"],
-                answer: 0 // A [cite: 5]
+                question: "13. Pixels with D8=1 from a center pixel p are exactly:",
+                options: ["a) The 8-neighbors of p", "b) The 4-neighbors of p", "c) The diagonal neighbors of p", "d) All pixels in the image"],
+                answer: 0 // a
             },
             {
-                question: "94. Determining the best path across multiple networks is done by:",
-                options: ["A) Network layer", "B) Data link layer", "C) Transport layer", "D) Session layer"],
-                answer: 0 // A [cite: 5]
+                question: "14. What is unique about m-distance compared to D4 and D8?",
+                options: ["a) It depends on the pixel values (intensities) and the adjacency rule", "b) It is always smaller than D4", "c) It depends only on pixel coordinates", "d) It is the same as Euclidean distance"],
+                answer: 0 // a
             },
             {
-                question: "95. Which OSI layers are classified as the user support layers?",
-                options: ["A) Layers 5, 6, and 7", "B) Layers 1, 2, and 3", "C) Layer 4", "D) All layers"],
-                answer: 0 // A [cite: 5]
-            },
-            {
-                question: "96. Which layer provides services to the end user?",
-                options: ["A) Application layer", "B) Presentation layer", "C) Session layer", "D) Transport layer"],
-                answer: 0 // A [cite: 5]
-            },
-            {
-                question: "97. Which layer ensures that segments arrive in the correct order?",
-                options: ["A) Transport layer", "B) Network layer", "C) Data link layer", "D) Physical layer"],
-                answer: 0 // A [cite: 5]
-            },
-            {
-                question: "98. Which layer is responsible for defining data formats?",
-                options: ["A) Presentation layer", "B) Application layer", "C) Session layer", "D) Network layer"],
-                answer: 0 // A [cite: 5]
-            },
-            {
-                question: "99. The lowest layer of the OSI model is the:",
-                options: ["A) network layer", "B) transport layer", "C) physical layer", "D) application layer"],
-                answer: 2 // C [cite: 5]
-            },
-            {
-                question: "100. The data link layer provides:",
-                options: ["A) hop-to-hop delivery", "B) process-to-process delivery", "C) end-to-end routing", "D) application services"],
-                answer: 0 // A [cite: 5]
+                question: "15. In a binary image with V={1}, if two regions of 1s only touch diagonally, they are:",
+                options: ["a) Adjacent under both 4-adjacency and 8-adjacency", "b) Adjacent under 4-adjacency but not under 8-adjacency", "c) Adjacent under 8-adjacency but not under 4-adjacency", "d) Not adjacent under any adjacency rule"],
+                answer: 2 // c
             },
 
-            // --- الأسئلة من ملف 2 (مراجعة 101-120) ---
+            // --- Lect-5 ---
             {
-                question: "101. The network layer is concerned with _____ of data.",
-                options: ["A) Bits", "B) frames", "C) packets", "D) bytes"],
-                answer: 2 // C [cite: 2]
+                question: "1. What is the key difference between an array operation and a matrix operation on two images A and B?",
+                options: ["a) Array operations follow linear algebra rules, matrix operations are pixel-by-pixel", "b) Array operations are pixel-by-pixel, matrix operations follow linear algebra rules", "c) Array operations are faster than matrix operations", "d) There is no difference; they are the same"],
+                answer: 1 // b
             },
             {
-                question: "102. The transport layer provides:",
-                options: ["A) host-to-host communication", "B) process-to-process communication", "C) node-to-node communication", "D) cable communication"],
-                answer: 1 // B [cite: 2]
+                question: "2. An operator H is linear if it satisfies which two conditions?",
+                options: ["a) Multiplication and division", "b) Additivity and homogeneity (scaling)", "c) Transpose and inverse", "d) Differentiation and integration"],
+                answer: 1 // b
             },
             {
-                question: "103. The session layer is responsible for:",
-                options: ["A) signal encoding", "B) dialog control between devices", "C) packet routing", "D) frame creation"],
-                answer: 1 // B [cite: 2]
+                question: "3. Which of the following operations is an example of a non-linear operator?",
+                options: ["a) Summation (Σ)", "b) Mean filter", "c) Gaussian blur", "d) Max operator"],
+                answer: 3 // d
             },
             {
-                question: "104. The presentation layer deals with:",
-                options: ["A) encryption and data representation", "B) signal transmission", "C) routing tables", "D) packet switching"],
-                answer: 0 // A [cite: 2]
+                question: "4. Image addition by averaging multiple noisy captures of the same scene helps to:",
+                options: ["a) Increase image sharpness", "b) Add more color to the image", "c) Reduce random noise", "d) Increase the image size"],
+                answer: 2 // c
             },
             {
-                question: "105. The application layer provides:",
-                options: ["A) device addressing", "B) end-user network services", "C) physical data links", "D) error recovery at the bit level"],
-                answer: 1 // B [cite: 2]
+                question: "5. In digital subtraction angiography, what is the purpose of subtracting a mask image from a live image?",
+                options: ["a) To add random noise", "b) To enhance background anatomy", "c) To reveal blood vessels by suppressing background", "d) To increase image brightness"],
+                answer: 2 // c
             },
             {
-                question: "106. Encapsulation refers to:",
-                options: ["A) encrypting packets", "B) adding headers as data moves through layers", "C) compressing packets", "D) switching packets"],
-                answer: 1 // B [cite: 2]
+                question: "6. To correct an image g(x,y) that has been affected by an unwanted shading pattern h(x,y) where g(x,y) = f(x,y)*h(x,y) the true image f(x,y) is recovered by:",
+                options: ["a) f = g/h", "b) f = g+h", "c) f = g-h", "d) f = g x h"],
+                answer: 0 // a
             },
             {
-                question: "107. The seven layers of the OSI model are commonly divided into:",
-                options: ["A) Two groups", "B) Three Subgroups", "C) Four groups", "D) Five groups"],
-                answer: 1 // B [cite: 2]
+                question: "7. To isolate a region of interest (ROI) for analysis using a binary mask m(x,y), the operation performed is:",
+                options: ["a) ROI = f(x,y) + m(x,y)", "b) ROI = f(x,y) - m(x,y)", "c) ROI = f(x,y) x m(x,y)", "d) ROI = f(x,y) / m(x,y)"],
+                answer: 2 // c
             },
             {
-                question: "108. Which OSI layers are classified as the user support layers?",
-                options: ["A) Application, Presentation, Session", "B) Network, Data Link, Physical", "C) Transport, Network, Data Link", "D) Presentation, Transport, Network"],
-                answer: 0 // A [cite: 2]
+                question: "8. In set operations applied to binary images, the operation A OR B produces a result pixel that is 1 when:",
+                options: ["a) Both A and B are 0", "b) Both A and B are 1", "c) At least one of A or B is 1", "d) A is 1 and B is 0"],
+                answer: 2 // c
             },
             {
-                question: "109. Which OSI layers are classified as the network support layers?",
-                options: ["A) Application, Presentation, Session", "B) Transport, Network, Data Link", "C) Data Link, Physical, Session", "D) Physical, Data Link, Network"],
-                answer: 3 // D [cite: 2]
+                question: "9. For grayscale images, the set operation Union (A U B) is implemented by taking which value from each pair of corresponding pixels?",
+                options: ["a) The minimum value", "b) The average value", "c) The maximum value", "d) The difference between values"],
+                answer: 2 // c
             },
             {
-                question: "110. The TCP/IP protocol suite was originally developed to support communication in:",
-                options: ["A) ISO networks", "B) ARPANET", "C) IEEE networks", "D) LAN systems"],
-                answer: 1 // B [cite: 2]
+                question: "10. What are the two main steps in any geometric transformation of an image?",
+                options: ["a) Color conversion and filtering", "b) Spatial coordinate transformation and intensity interpolation", "c) Compression and decompression", "d) Histogram equalization and thresholding"],
+                answer: 1 // b
             },
             {
-                question: "111. The TCP/IP protocol suite is a set of protocols designed for:",
-                options: ["A) Controlling computer hardware", "B) Communication between networked computers", "C) Managing operating systems", "D) Designing network cables"],
-                answer: 1 // B [cite: 2]
+                question: "11. Why is inverse mapping generally preferred over forward mapping for geometric transformations?",
+                options: ["a) It is easier to calculate", "b) It avoids creating 'holes' in the output image", "c) It requires no interpolation", "d) It is faster for all transformations"],
+                answer: 1 // b
             },
             {
-                question: "112. In the TCP/IP model, communication tasks are divided into layers in order to:",
-                options: ["A) Increase packet size", "B) Simplify network design and implementation", "C) Reduce routing complexity", "D) Eliminate addressing"],
-                answer: 1 // B [cite: 2]
+                question: "12. In a 2D translation, a point (X, Y) is moved to a new point (X2, Y2) by:",
+                options: ["a) Multiplying by scale factors", "b) Rotating around the origin", "c) Multiplying by sine and cosine of an angle", "d) Adding translation amounts TX and TY"],
+                answer: 3 // d
             },
             {
-                question: "113. The TCP/IP protocol suite uses a layered architecture where each layer:",
-                options: ["A) Operates independently", "B) Uses services of the layer below and provides services to the layer above", "C) Communicates directly with physical medium", "D) Performs identical functions"],
-                answer: 1 // B [cite: 2]
+                question: "13. To scale an object about a fixed point (xp, yp) rather than the origin, the correct sequence of operations is:",
+                options: ["a) Scale, then translate", "b) Rotate, then scale, then translate", "c) Translate to origin, scale, then translate back", "d) Translate, then rotate"],
+                answer: 2 // c
             },
             {
-                question: "114. In network communication, protocols define:",
-                options: ["A) Hardware components", "B) Rules governing communication between devices", "C) Network cables", "D) Physical signals"],
-                answer: 1 // B [cite: 2]
+                question: "14. The convention for the direction of rotation in image processing is:",
+                options: ["a) Clockwise is always positive", "b) Counterclockwise is positive, clockwise is negative", "c) Direction does not matter", "d) Only 90-degree rotations are allowed"],
+                answer: 1 // b
             },
             {
-                question: "115. The TCP/IP model consists of:",
-                options: ["A) 3 layers", "B) 4 or 5 layers", "C) 6 layers", "D) 7 layers"],
-                answer: 1 // B [cite: 2]
-            },
-            {
-                question: "116. The layers of the TCP/IP model are:",
-                options: ["A) Application, Transport, Internet, Network Access", "B) App, Session, Transport, Network", "C) Pres, Transport, Internet, Physical", "D) App, Data Link, Internet, Physical"],
-                answer: 0 // A [cite: 2]
-            },
-            {
-                question: "117. Which layer of the TCP/IP model is responsible for process-to-process communication?",
-                options: ["A) Application layer", "B) Transport layer", "C) Internet layer", "D) Network Access layer"],
-                answer: 1 // B [cite: 2]
-            },
-            {
-                question: "118. Which TCP/IP layer is responsible for logical addressing across networks?",
-                options: ["A) Transport layer", "B) Internet layer", "C) Application layer", "D) Network Access layer"],
-                answer: 1 // B [cite: 2]
-            },
-            {
-                question: "119. Which TCP/IP layer is responsible for packet routing?",
-                options: ["A) Transport layer", "B) Internet layer", "C) Application layer", "D) Network Access layer"],
-                answer: 1 // B [cite: 2]
-            },
-            {
-                question: "120. The Network Access layer is responsible for:",
-                options: ["A) Routing packets", "B) Providing application services", "C) Transmission of frames over the physical medium", "D) Managing transport connections"],
-                answer: 2 // C [cite: 2]
+                question: "15. What is the main characteristic of a projective transformation that distinguishes it from an affine transformation?",
+                options: ["a) Parallel lines may converge (have a vanishing point)", "b) It preserves parallelism", "c) It requires only 2 point pairs to solve", "d) It cannot handle translation"],
+                answer: 0 // a
             },
 
-            // --- الأسئلة من ملف 7 (TCP/IP) ---
+            // --- Lect-6 ---
             {
-                question: "Q121: The Application layer of TCP/IP provides:",
-                options: ["A) Device addressing", "B) Packet routing", "C) Services to user applications", "D) Frame transmission"],
-                answer: 2 // C
+                question: "1. What is the point-processing model for intensity transformations?",
+                options: ["a) The output pixel value depends on its neighboring pixels", "b) The output pixel value depends only on the input pixel value at the same location", "c) The output image is a combination of multiple input images", "d) The output pixel value is always the average of all input pixels"],
+                answer: 1 // b
             },
             {
-                question: "Q122: Which protocol is used for web communication?",
-                options: ["A) FTP", "B) HTTP", "C) DNS", "D) SMTP"],
-                answer: 1 // B
+                question: "2. What is the primary advantage of using a Look-Up Table (LUT) for implementing intensity transformations?",
+                options: ["a) It requires less memory to store the image", "b) It produces higher quality images", "c) It is faster because the mapping is precomputed", "d) It allows for more complex neighbor operations"],
+                answer: 2 // c
             },
             {
-                question: "Q123: Which protocol is responsible for transferring files between computers?",
-                options: ["A) SMTP", "B) FTP", "C) HTTP", "D) SNMP"],
-                answer: 1 // B
+                question: "3. For an 8-bit image with L=256, the image negative transformation is defined as:",
+                options: ["a) s = 255 + r", "b) s = 255 - r", "c) s = r - 255", "d) s = 255 / r"],
+                answer: 1 // b
             },
             {
-                question: "Q124: The protocol used to translate domain names into IP addresses is:",
-                options: ["A) ARP", "B) DNS", "C) ICMP", "D) UDP"],
-                answer: 1 // B
+                question: "4. A digital mammogram is often displayed as a negative image because:",
+                options: ["a) It uses less ink to print", "b) It can reveal structure more clearly in dark regions", "c) It is the standard format for all medical images", "d) It reduces the file size"],
+                answer: 1 // b
             },
             {
-                question: "Q125: Which protocol is primarily used for sending electronic mail?",
-                options: ["A) HTTP", "B) FTP", "C) SMTP", "D) SNMP"],
-                answer: 2 // C
+                question: "5. The log transformation s=c log(1+r) has what main effect on an image?",
+                options: ["a) It expands bright values and compresses dark values", "b) It reverses all gray levels", "c) It expands dark values and compresses bright values", "d) It creates a binary image"],
+                answer: 2 // c
             },
             {
-                question: "Q126: The Transport layer provides communication between:",
-                options: ["A) Devices", "B) Networks", "C) Processes", "D) Routers"],
-                answer: 2 // C
+                question: "6. Why is the log transformation particularly useful for displaying a Fourier spectrum?",
+                options: ["a) Because it compresses the huge dynamic range of the spectrum values", "b) Because it makes the image sharper", "c) Because it reduces the image size", "d) Because it converts the image to color"],
+                answer: 0 // a
             },
             {
-                question: "Q127: Which protocol provides reliable data transfer?",
-                options: ["A) UDP", "B) TCP", "C) IP", "D) ARP"],
-                answer: 1 // B
+                question: "7. In a power-law (gamma) transformation s=cr^Y if y<1, what is the effect on the image?",
+                options: ["a) It darkens bright regions", "b) It brightens dark regions", "c) It has no effect on the image", "d) It creates a negative image"],
+                answer: 1 // b
             },
             {
-                question: "Q128: UDP is characterized by:",
-                options: ["A) Connection-oriented service", "B) Reliable delivery", "C) Connectionless service", "D) Error-free transmission"],
-                answer: 2 // C
+                question: "8. A washed-out aerial image that looks too bright can be enhanced by using a gamma transformation with:",
+                options: ["a) y > 1", "b) y < 1", "c) y = 1", "d) y = 0"],
+                answer: 0 // a
             },
             {
-                question: "Q129: Which of the following is a function of the Transport layer?",
-                options: ["A) Routing packets", "B) Flow control", "C) Signal transmission", "D) Address mapping"],
-                answer: 1 // B
+                question: "9. What is the purpose of contrast stretching?",
+                options: ["a) To convert the image to a binary image", "b) To expand a narrow range of intensities to span the full display range", "c) To reverse all gray levels in the image", "d) To remove high-frequency noise"],
+                answer: 1 // b
             },
             {
-                question: "Q130: Which transport protocol provides connectionless service with lower overhead than TCP?",
-                options: ["A) HTTP", "B) UDP", "C) IP", "D) ICMP"],
-                answer: 1 // B
+                question: "10. Thresholding can be seen as an extreme case of piecewise linear transformation where the slope of the middle segment becomes:",
+                options: ["a) Infinite", "b) Zero", "c) One", "d) Negative"],
+                answer: 0 // a
             },
             {
-                question: "Q131: The Internet layer is responsible for:",
-                options: ["A) Data encryption", "B) Logical addressing and routing", "C) Application services", "D) Signal transmission"],
-                answer: 1 // B
+                question: "11. In gray-level slicing, what is the difference between the two common approaches?",
+                options: ["a) One uses log, the other uses gamma", "b) One highlights a band and suppresses everything else, the other highlights the band while preserving background levels", "c) One works on color images, the other on grayscale", "d) One is linear, the other is non-linear"],
+                answer: 1 // b
             },
             {
-                question: "Q132: Which protocol is the fundamental protocol of the Internet layer?",
-                options: ["A) TCP", "B) IP", "C) FTP", "D) HTTP"],
-                answer: 1 // B
+                question: "12. In bit-plane slicing, which bit plane contains the most significant bit and often most of the visible structural information?",
+                options: ["a) Plane 1", "b) Plane 4", "c) Plane 0", "d) Plane 8"],
+                answer: 3 // d
             },
             {
-                question: "Q133: The Internet Protocol (IP) provides:",
-                options: ["A) Guaranteed delivery", "B) Reliable connection", "C) Best-effort packet delivery", "D) Error-free transmission"],
-                answer: 2 // C
+                question: "13. If you reconstruct an image using only bit planes 8 and 7, what is the main visual characteristic of the result?",
+                options: ["a) It looks identical to the original", "b) It looks flat with only a few intensity levels", "c) It is very noisy", "d) It has perfect color representation"],
+                answer: 1 // b
             },
             {
-                question: "Q134: An IP address identifies:",
-                options: ["A) A computer interface within a network", "B) A network cable", "C) A communication protocol", "D) A software application"],
-                answer: 0 // A
+                question: "14. For an 8-bit image, what is the negative of a pixel with the value 37?",
+                options: ["a) 37", "b) 218", "c) 255", "d) 0"],
+                answer: 1 // b
             },
             {
-                question: "Q135: The Network Access layer corresponds to which OSI layers?",
-                options: ["A) Physical only", "B) Data Link only", "C) Physical and Data Link layers", "D) Network and Transport"],
-                answer: 2 // C
-            },
-            {
-                question: "Q136: Which technology belongs to the Network Access layer?",
-                options: ["A) Ethernet", "B) TCP", "C) HTTP", "D) SMTP"],
-                answer: 0 // A
-            },
-            {
-                question: "Q137: Encapsulation is the process of:",
-                options: ["A) Compressing network data", "B) Dividing networks into subnets", "C) Enclosing data with protocol headers", "D) Encrypting data"],
-                answer: 2 // C
-            },
-            {
-                question: "Q138: The data unit at the Transport layer is called:",
-                options: ["A) Frame", "B) Segment", "C) Packet", "D) Bit"],
-                answer: 1 // B
-            },
-            {
-                question: "Q139: The data unit at the Internet layer is called:",
-                options: ["A) Frame", "B) Packet/Datagram", "C) Segment", "D) Message"],
-                answer: 1 // B
-            },
-            {
-                question: "Q140: The data unit at the Network Access layer is called:",
-                options: ["A) Frame", "B) Packet", "C) Segment", "D) Message"],
-                answer: 0 // A
+                question: "15. Which intensity transformation method is most suitable for converting a grayscale image into a binary image separating object from background?",
+                options: ["a) Log transformation", "b) Gamma correction with y=0.4", "c) Thresholding", "d) Bit-plane slicing of plane 1"],
+                answer: 2 // c
             },
 
-            // --- الأسئلة من ملف 8 (Diagnostic) ---
+            // --- Lect-7 ---
             {
-                question: "Q141: The reverse process of encapsulation is called:",
-                options: ["A) Fragmentation", "B) Decapsulation", "C) Multiplexing", "D) Transmission"],
-                answer: 1 // B
+                question: "1. What does an image histogram represent?",
+                options: ["a) The spatial coordinates of pixels in the image", "b) The relative frequency of occurrence of various gray levels in an image", "c) The color balance of the image", "d) The file size of the image in kilobytes"],
+                answer: 1 // b
             },
             {
-                question: "Q142: The OSI model contains:",
-                options: ["A) 4 layers", "B) 5 layers", "C) 6 layers", "D) 7 layers"],
-                answer: 3 // D
+                question: "2. In a normalized histogram, the sum of all components is always equal to:",
+                options: ["a) The total number of pixels", "b) The image width", "c) 1", "d) 256"],
+                answer: 2 // c
             },
             {
-                question: "Q143: The OSI model was developed by:",
-                options: ["A) IEEE", "B) ISO", "C) IETF", "D) ARPANET"],
-                answer: 1 // B
+                question: "3. What does a histogram concentrated on the low (dark) side of the grayscale indicate about an image?",
+                options: ["a) It is a light or bright image", "b) It is a high contrast image", "c) It is a dark image", "d) It is a color image"],
+                answer: 2 // c
             },
             {
-                question: "Q144: Which OSI layers correspond to the TCP/IP Application layer?",
-                options: ["A) Application, Presentation, Session", "B) Transport and Network", "C) Physical and Data Link", "D) Network and Session"],
-                answer: 0 // A
+                question: "4. An image with a histogram that is narrow and centered toward the middle of the grayscale is characteristic of:",
+                options: ["a) A high contrast image", "b) A low contrast image", "c) A bright image", "d) A binary image"],
+                answer: 1 // b
             },
             {
-                question: "Q145: Which OSI layer corresponds to the TCP/IP Internet layer?",
-                options: ["A) Data Link", "B) Network", "C) Transport", "D) Session"],
-                answer: 1 // B
+                question: "5. What is the purpose of histogram stretching?",
+                options: ["a) To expand a narrow band of inputs to the full available display range", "b) To shift all pixel values by a fixed offset", "c) To compress the gray levels into a narrower range", "d) To automatically create a flat, uniform histogram"],
+                answer: 0 // a
             },
             {
-                question: "Q146: Which OSI layer corresponds to the TCP/IP Transport layer?",
-                options: ["A) Network", "B) Transport", "C) Session", "D) Application"],
-                answer: 1 // B
+                question: "6. Which histogram operation adds or subtracts a fixed offset from all pixel values to change global brightness?",
+                options: ["a) Stretching", "b) Shrinking", "c) Sliding", "d) Equalization"],
+                answer: 2 // c
             },
             {
-                question: "Q147: Which model is widely used in the Internet today?",
-                options: ["A) OSI model", "B) TCP/IP model", "C) IEEE model", "D) ISO model"],
-                answer: 1 // B
+                question: "7. What is the main limitation of linear histogram modifications like stretching, shrinking, and sliding?",
+                options: ["a) They do not change the internal shape of the distribution", "b) They are too slow to compute", "c) They only work on color images", "d) They always produce a uniform histogram"],
+                answer: 0 // a
             },
             {
-                question: "Q148: The OSI model is considered mainly:",
-                options: ["A) A practical implementation", "B) A theoretical reference model", "C) A routing protocol", "D) A transport protocol"],
-                answer: 1 // B
+                question: "8. What is the goal of histogram equalization?",
+                options: ["a) To map the histogram to a pre-determined narrow range", "b) To shift the histogram to the dark side", "c) To make the output histogram as flat and uniform as possible", "d) To reverse the gray levels"],
+                answer: 2 // c
             },
             {
-                question: "Q149: The main advantage of layered architecture is:",
-                options: ["A) Hardware simplification", "B) Modularity in network design", "C) Increasing packet size", "D) Eliminating protocols"],
-                answer: 1 // B
+                question: "9. In the discrete implementation of histogram equalization, the transformation function T(r_k) is based on:",
+                options: ["a) The sum of all pixel values", "b) The cumulative distribution function (CDF) of the image", "c) The maximum pixel value in the image", "d) A user-defined lookup table"],
+                answer: 1 // b
             },
             {
-                question: "Q150: Each TCP/IP layer communicates logically with:",
-                options: ["A) Adjacent layers only", "B) Corresponding layer on another device", "C) Physical medium directly", "D) Application programs only"],
-                answer: 1 // B
+                question: "10. After applying histogram equalization to a 3-bit image in the lecture example, the original 8 intensity levels were mathematically compressed into how many distinct output gray levels?",
+                options: ["a) 8", "b) 7", "c) 3", "d) 5"],
+                answer: 3 // d
             },
             {
-                question: "Q151: TCP provides:",
-                options: ["A) Connectionless communication", "B) Reliable connection-oriented communication", "C) Broadcast communication", "D) Multicast communication"],
-                answer: 1 // B
+                question: "11. What is the key difference between histogram equalization and histogram specification (matching)?",
+                options: ["a) Equalization is for color images, specification is for grayscale", "b) Equalization creates a uniform histogram, specification allows the user to define the exact desired histogram shape", "c) Equalization is a local operation, specification is global", "d) There is no difference; they are the same technique"],
+                answer: 1 // b
             },
             {
-                question: "Q152: UDP provides:",
-                options: ["A) Reliable communication", "B) Connection-oriented communication", "C) Connectionless service", "D) Error correction"],
-                answer: 2 // C
+                question: "12. What is a major limitation of global histogram processing methods like equalization and specification?",
+                options: ["a) They are too computationally expensive", "b) They can only be applied to 8-bit images", "c) They always make the image darker", "d) They fail when it is necessary to enhance specific microscopic details in very small areas"],
+                answer: 3 // d
             },
             {
-                question: "Q153: Which protocol is used for network error reporting?",
-                options: ["A) ICMP", "B) SMTP", "C) FTP", "D) HTTP"],
-                answer: 0 // A
+                question: "13. In local histogram processing, where is the transformation function applied?",
+                options: ["a) To the entire image at once", "b) Only to the center pixel of a defined neighborhood", "c) To every pixel in the neighborhood equally", "d) To the four corner pixels of the image"],
+                answer: 1 // b
             },
             {
-                question: "Q154: Which protocol maps IP addresses to MAC addresses?",
-                options: ["A) DNS", "B) ARP", "C) TCP", "D) UDP"],
-                answer: 1 // B
+                question: "14. What statistical measure from a histogram serves as a direct mathematical measure of intensity contrast in an image?",
+                options: ["a) The mean (m)", "b) The mode", "c) The variance (σ²) or standard deviation", "d) The cumulative sum"],
+                answer: 2 // c
             },
             {
-                question: "Q155: Which protocol suite forms the foundation of the Internet?",
-                options: ["A) OSI", "B) TCP/IP", "C) IEEE 802", "D) HTTP"],
-                answer: 1 // B
-            },
-            {
-                question: "Q156: Which protocol is used for remote login?",
-                options: ["A) FTP", "B) TELNET", "C) DNS", "D) SMTP"],
-                answer: 1 // B
-            },
-            {
-                question: "Q157: Which protocol is used for network management?",
-                options: ["A) SNMP", "B) HTTP", "C) FTP", "D) TCP"],
-                answer: 0 // A
-            },
-            {
-                question: "Q158: The TCP/IP protocol suite enables communication between:",
-                options: ["A) Software applications only", "B) Network devices across interconnected networks", "C) Hardware components only", "D) Local devices only"],
-                answer: 1 // B
-            },
-            {
-                question: "Q159: What does the TCP/IP protocol suite represent?",
-                options: ["A) A proprietary networking model", "B) The de-facto standard for internet communication", "C) An alternative exclusively for wireless networks", "D) A replacement for application protocols"],
-                answer: 1 // B
-            },
-            {
-                question: "Q160: What does the abbreviation IP stand for?",
-                options: ["A) Internet Process", "B) Internet Protocol", "C) Internal Packet", "D) Information Protocol"],
-                answer: 1 // B
-            },
-
-            // --- الأسئلة من ملف 9 (IPv4 Knowledge Check) ---
-            {
-                question: "Q161: At which layer of the OSI model does IP addressing operate?",
-                options: ["A) Data Link Layer", "B) Network Layer", "C) Transport Layer", "D) Application Layer"],
-                answer: 1 // B
-            },
-            {
-                question: "Q162: Which protocol is responsible for logical addressing in the Internet?",
-                options: ["A) TCP", "B) HTTP", "C) IP", "D) FTP"],
-                answer: 2 // C
-            },
-            {
-                question: "Q163: Which addressing type uniquely identifies a device across multiple networks?",
-                options: ["A) MAC Address", "B) Logical Address", "C) Port Number", "D) Physical Address"],
-                answer: 1 // B
-            },
-            {
-                question: "Q164: How many bits are used in an IPv4 address?",
-                options: ["A) 16", "B) 32", "C) 64", "D) 128"],
-                answer: 1 // B
-            },
-            {
-                question: "Q165: An IPv4 address consists of how many octets?",
-                options: ["A) 2", "B) 3", "C) 4", "D) 8"],
-                answer: 2 // C
-            },
-            {
-                question: "Q166: Each octet in an IPv4 address contains:",
-                options: ["A) 4 bits", "B) 8 bits", "C) 16 bits", "D) 32 bits"],
-                answer: 1 // B
-            },
-            {
-                question: "Q167: What is the valid decimal range of an IPv4 octet?",
-                options: ["A) 0-127", "B) 0-255", "C) 1-256", "D) 1-512"],
-                answer: 1 // B
-            },
-            {
-                question: "Q168: Which of the following represents a valid IPv4 address?",
-                options: ["A) 192.168.1.10", "B) 256.10.1.1", "C) 192.168.300.1", "D) 192.168.1"],
-                answer: 0 // A
-            },
-            {
-                question: "Q169: An IPv4 address is logically divided into:",
-                options: ["A) Source & destination", "B) Network ID & Host ID", "C) Header & payload", "D) Bits & bytes"],
-                answer: 1 // B
-            },
-            {
-                question: "Q170: The Network ID portion of an IP address identifies:",
-                options: ["A) The router", "B) The network", "C) The application", "D) The transport protocol"],
-                answer: 1 // B
-            },
-            {
-                question: "Q171: The Host ID portion of an IP address identifies:",
-                options: ["A) The specific device in the network", "B) The router", "C) The network segment", "D) The gateway"],
-                answer: 0 // A
-            },
-            {
-                question: "Q172: All hosts in the same network share the same:",
-                options: ["A) Host ID", "B) Network ID", "C) MAC address", "D) Port number"],
-                answer: 1 // B
-            },
-            {
-                question: "Q173: Which device primarily uses IP addresses to forward packets between networks?",
-                options: ["A) Switch", "B) Hub", "C) Router", "D) Repeater"],
-                answer: 2 // C
-            },
-            {
-                question: "Q174: Which class of IPv4 addresses is intended for very large networks?",
-                options: ["A) Class A", "B) Class B", "C) Class C", "D) Class D"],
-                answer: 0 // A
-            },
-            {
-                question: "Q175: Which class of IPv4 addresses is commonly used for small networks?",
-                options: ["A) Class A", "B) Class B", "C) Class C", "D) Class D"],
-                answer: 2 // C
-            },
-            {
-                question: "Q176: The first octet range of Class A addresses is:",
-                options: ["A) 1-126", "B) 128-191", "C) 192-223", "D) 224-239"],
-                answer: 0 // A
-            },
-            {
-                question: "Q177: The first octet range of Class B addresses is:",
-                options: ["A) 1-126", "B) 128-191", "C) 192-223", "D) 224-239"],
-                answer: 1 // B
-            },
-            {
-                question: "Q178: The first octet range of Class C addresses is:",
-                options: ["A) 1-126", "B) 128-191", "C) 192-223", "D) 224-239"],
-                answer: 2 // C
-            },
-            {
-                question: "Q179: Which address represents a broadcast address?",
-                options: ["A) 0.0.0.0", "B) 127.0.0.1", "C) 255.255.255.255", "D) 192.168.1.1"],
-                answer: 2 // C
-            },
-            {
-                question: "Q180: Which of the following is a private IPv4 address?",
-                options: ["A) 8.8.8.8", "B) 192.168.1.10", "C) 54.20.1.1", "D) 12.5.4.1"],
-                answer: 1 // B
-            },
-
-            // --- الأسئلة من ملف 10 (IP Addressing Assessment) ---
-            {
-                question: "Q181: Private IP addresses are mainly used in:",
-                options: ["A) Public Internet routing", "B) Local area networks", "C) Satellite systems", "D) Cellular networks"],
-                answer: 1 // B
-            },
-            {
-                question: "Q182: Which range represents private Class A addresses?",
-                options: ["A) 10.0.0.0 - 10.255.255.255", "B) 172.16.0.0 – 172.31.255.255", "C) 192.168.0.0 – 192.168.255.255", "D) 127.0.0.0 – 127.255.255.255"],
-                answer: 0 // A
-            },
-            {
-                question: "Q183: Which range represents private Class B addresses?",
-                options: ["A) 10.0.0.0 - 10.255.255.255", "B) 172.16.0.0 – 172.31.255.255", "C) 192.168.0.0 – 192.168.255.255", "D) 224.0.0.0 – 239.255.255.255"],
-                answer: 1 // B
-            },
-            {
-                question: "Q184: Which range represents private Class C addresses?",
-                options: ["A) 10.0.0.0 - 10.255.255.255", "B) 172.16.0.0 – 172.31.255.255", "C) 192.168.0.0 – 192.168.255.255", "D) 127.0.0.0 – 127.255.255.255"],
-                answer: 2 // C
-            },
-            {
-                question: "Q185: What are the address sizes of IPv4 and IPv6?",
-                options: ["A) 32 bits, 128 bits", "B) 32 byte and 128 byte", "C) 32 byte, 128bits", "D) 32 bits, 128 bytes"],
-                answer: 0 // A
-            },
-            {
-                question: "Q186: The main reason for introducing IPv6 was:",
-                options: ["A) Faster routers", "B) Address exhaustion in IPv4", "C) Better encryption", "D) Wireless networking"],
-                answer: 1 // B
-            },
-            {
-                question: "Q187: Which class does the address 150.25.10.5 belong to?",
-                options: ["A) Class A", "B) Class B", "C) Class C", "D) Class D"],
-                answer: 1 // B
-            },
-            {
-                question: "Q188: Which class does the address 10.5.4.3 belong to?",
-                options: ["A) Class A", "B) Class B", "C) Class C", "D) Class D"],
-                answer: 0 // A
-            },
-            {
-                question: "Q189: Which class does the address 192.168.1.1 belong to?",
-                options: ["A) Class A", "B) Class B", "C) Class C", "D) Class D"],
-                answer: 2 // C
-            },
-            {
-                question: "Q190: Which address below is invalid?",
-                options: ["A) 192.168.1.10", "B) 172.16.1.5", "C) 256.10.1.1", "D) 10.0.0.1"],
-                answer: 2 // C
-            },
-            {
-                question: "Q191: Which address belongs to Class B?",
-                options: ["A) 150.20.10.1", "B) 92.168.1.1", "C) 10.1.1.1", "D) 225.1.1.1"],
-                answer: 0 // A
-            },
-            {
-                question: "Q192: Which address is a private Class A address?",
-                options: ["A) 10.5.2.1", "B) 11.2.3.4", "C) 15.1.1.1", "D) 12.1.1.1"],
-                answer: 0 // A
-            },
-            {
-                question: "Q193: Which address belongs to a private Class B range?",
-                options: ["A) 172.20.10.5", "B) 150.10.5.5", "C) 130.20.10.10", "D) 180.10.10.10"],
-                answer: 0 // A
-            },
-            {
-                question: "Q194:Which address is a private Class C address?",
-                options: ["A) 192.168.1.20", "B) 200.1.1.1", "C) 180.5.5.5", "D) 210.10.10.10"],
-                answer: 0 // A
-            },
-            {
-                question: "Q195: Which IPv4 address could represent a host in a Class C network?",
-                options: ["A) 192.168.1.10", "B) 10.1.1.1", "C) 150.1.1.1", "D) 20.1.1.1"],
-                answer: 0 // A
-            },
-            {
-                question: "Q196: Which class supports the largest number of hosts?",
-                options: ["A) Class A", "B) Class B", "C) Class C", "D) Class D"],
-                answer: 0 // A
-            },
-            {
-                question: "Q197: Which address format is used by IPv6?",
-                options: ["A) Four decimal octets", "B) Eight hexadecimal blocks", "C) Four binary blocks", "D) Two decimal blocks"],
-                answer: 1 // B
-            },
-            {
-                question: "Q199: Which address cannot be routed on the public Internet?",
-                options: ["A) 8.8.8.8", "B) 192.168.1.5", "C) 54.2.3.4", "D) 12.1.1.1"],
-                answer: 1 // B
-            },
-            {
-                question: "Q200: Which class begins with the first octet 172?",
-                options: ["A) Class A", "B) Class B", "C) Class C", "D) Class D"],
-                answer: 1 // B
-            },
-            {
-                question: "Q201: Which protocol is responsible for packet delivery across interconnected networks?",
-                options: ["A) FTP", "B) HTTP", "C) Internet Protocol", "D) SMTP"],
-                answer: 2 // C
-            },
-            {
-                question: "Q202: The Internet Protocol (IP) is responsible for:",
-                options: ["A) packet addressing and routing", "B) file transfer", "C) signal modulation", "D) encryption"],
-                answer: 0 // A
-            },
-            {
-                question: "Q203: An IP address is defined as:",
-                options: ["A) a physical hardware identifier", "B) a logical address identifying a device in an internetwork", "C) a cable identifier", "D) a port identifier"],
-                answer: 1 // B
-            },
-            {
-                question: "Q204: IPv4 addresses are commonly represented using:",
-                options: ["A) hexadecimal notation", "B) dotted decimal notation", "C) binary notation", "D) octal notation"],
-                answer: 1 // B
-            },
-            {
-                question: "Q205: Routers use IP addresses primarily to:",
-                options: ["A) compress packets", "B) determine the path for packet forwarding", "C) generate signals", "D) store packets"],
-                answer: 1 // B
+                question: "15. According to the decision guide, if an image has acceptable contrast but is overall too dark, what is the recommended histogram operation?",
+                options: ["a) Histogram Stretching", "b) Histogram Shrinking", "c) Histogram Sliding", "d) Histogram Equalization"],
+                answer: 2 // c
             }
 
 
